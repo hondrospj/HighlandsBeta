@@ -1,5 +1,4 @@
-ORIGINAL_PATH: .github/workflows/update-forecast.yml
----FILE_CONTENT_START---
+
 name: Update Highlands forecast
 
 on:
