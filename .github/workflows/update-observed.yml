@@ -1,5 +1,4 @@
-ORIGINAL_PATH: .github/workflows/update-observed.yml
----FILE_CONTENT_START---
+
 name: Update Highlands observed
 
 on:
