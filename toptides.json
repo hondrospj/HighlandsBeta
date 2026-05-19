@@ -1,29 +1,4 @@
+
 {
-  "toptides": [
-    {
-      "height_ft": 9.0,
-      "date": "1962-03-06",
-      "display_date": "March 6, 1962"
-    },
-    {
-      "height_ft": 7.1,
-      "date": "2012-10-29",
-      "display_date": "October 29, 2012"
-    },
-    {
-      "height_ft": 6.28,
-      "date": "1998-02-05",
-      "display_date": "February 5, 1998"
-    },
-    {
-      "height_ft": 6.02,
-      "date": "1984-03-29",
-      "display_date": "March 29, 1984"
-    },
-    {
-      "height_ft": 5.99,
-      "date": "1992-12-12",
-      "display_date": "December 12, 1992"
-    }
-  ]
+  "toptides": []
 }
