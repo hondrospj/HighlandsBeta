@@ -1,4 +1,6 @@
-name: Update Avalon observed
+ORIGINAL_PATH: .github/workflows/update-observed.yml
+---FILE_CONTENT_START---
+name: Update Highlands observed
 
 on:
   schedule:
@@ -28,24 +30,24 @@ jobs:
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
-          # Avalon USGS observed gauge
-          SITE = "01411355"
+          # Highlands USGS observed gauge
+          SITE = "01407600"
           PARAMETER_CD = "72279"
           DATUM = "NAVD88"
           TIME_ZONE = "EST"
 
-          NAVD88_OFFSET_FROM_MLLW = -2.85
+          NAVD88_OFFSET_FROM_MLLW = -2.13
 
           THRESHOLDS_MLLW = {
-              "minorLow": 6.0,
-              "moderateLow": 7.0,
-              "majorLow": 8.0
+              "minorLow": 5.2,
+              "moderateLow": 6.2,
+              "majorLow": 7.2
           }
 
           THRESHOLDS_NAVD88 = {
-              "minorLow": 3.15,
-              "moderateLow": 4.15,
-              "majorLow": 5.15
+              "minorLow": 3.07,
+              "moderateLow": 4.07,
+              "majorLow": 5.07
           }
 
           ARCHIVE_START_DATE = "2007-10-01"
@@ -174,7 +176,7 @@ jobs:
               "thresholdsMLLW": THRESHOLDS_MLLW,
               "thresholdsNAVD88": THRESHOLDS_NAVD88,
               "sourceType": "USGS_NWIS_instantaneous_values_hourly_max",
-              "sourceUrlTemplate": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01411355&parameterCd=72279&startDT=YYYY-MM-DD&endDT=YYYY-MM-DD&siteStatus=all",
+              "sourceUrlTemplate": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01407600&parameterCd=72279&startDT=YYYY-MM-DD&endDT=YYYY-MM-DD&siteStatus=all",
               "days": days
           }
 
@@ -194,5 +196,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add observed.json
-          git diff --staged --quiet || git commit -m "Update Avalon observed"
+          git diff --staged --quiet || git commit -m "Update Highlands observed"
           git push
