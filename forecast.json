@@ -1,7 +1,4 @@
-ORIGINAL_PATH: forecast.json
-TXT_OUTPUT_NAME: ORIGINAL_STRUCTURE_TXT/forecast.json.txt
-BINARY_BASE64: False
----FILE_CONTENT_START---
+
 {
   "stationId": "8531804",
   "stationName": "SEA BRIGHT, NJ",
