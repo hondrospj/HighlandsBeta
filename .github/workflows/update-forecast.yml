@@ -1,4 +1,6 @@
-name: Update Avalon forecast
+ORIGINAL_PATH: .github/workflows/update-forecast.yml
+---FILE_CONTENT_START---
+name: Update Highlands forecast
 
 on:
   schedule:
@@ -29,17 +31,17 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from pathlib import Path
 
-          STATION_ID = "8535419"
-          STATION_NAME = "AVALON, NJ"
+          STATION_ID = "8531804"
+          STATION_NAME = "SEA BRIGHT, NJ"
 
-          NAVD88_OFFSET_FROM_MLLW = -2.85
+          NAVD88_OFFSET_FROM_MLLW = -2.13
           PETSS_RAW_SCALE = 0.1
           PETSS_SOURCE_DATUM = "NAVD88"
 
           THRESHOLDS_MLLW = {
-              "minorLow": 6.0,
-              "moderateLow": 7.0,
-              "majorLow": 8.0
+              "minorLow": 5.2,
+              "moderateLow": 6.2,
+              "majorLow": 7.2
           }
 
           THRESHOLDS_NAVD88 = {
@@ -257,7 +259,7 @@ jobs:
                   except Exception as exc:
                       errors.append(f"{url}: {type(exc).__name__}: {exc}")
               raise RuntimeError(
-                  f"Could not find usable PETSS {product_key} Avalon forecast values.\n" + "\n".join(errors[-25:])
+                  f"Could not find usable PETSS {product_key} Highlands forecast values.\n" + "\n".join(errors[-25:])
               )
 
           def build_hours(raw_values, cycle_utc, now_utc):
@@ -373,5 +375,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add forecast.json
-          git diff --staged --quiet || git commit -m "Update Avalon forecast"
+          git diff --staged --quiet || git commit -m "Update Highlands forecast"
           git push
