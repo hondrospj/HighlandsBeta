@@ -1,0 +1,377 @@
+name: Update Avalon forecast
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-forecast:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Build forecast.json from PETSS mean, 10th, and 90th percentile guidance
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          import io
+          import json
+          import re
+          import tarfile
+          import urllib.request
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          STATION_ID = "8535419"
+          STATION_NAME = "AVALON, NJ"
+
+          NAVD88_OFFSET_FROM_MLLW = -2.85
+          PETSS_RAW_SCALE = 0.1
+          PETSS_SOURCE_DATUM = "NAVD88"
+
+          THRESHOLDS_MLLW = {
+              "minorLow": 6.0,
+              "moderateLow": 7.0,
+              "majorLow": 8.0
+          }
+
+          THRESHOLDS_NAVD88 = {
+              "minorLow": round(THRESHOLDS_MLLW["minorLow"] + NAVD88_OFFSET_FROM_MLLW, 2),
+              "moderateLow": round(THRESHOLDS_MLLW["moderateLow"] + NAVD88_OFFSET_FROM_MLLW, 2),
+              "majorLow": round(THRESHOLDS_MLLW["majorLow"] + NAVD88_OFFSET_FROM_MLLW, 2)
+          }
+
+          MIN_LAYER_STAGE = -2.0
+          MAX_LAYER_STAGE = 14.0
+          MAX_HOURS = 72
+          OUT_PATH = Path("forecast.json")
+
+          CYCLES_NEWEST_FIRST = ("18", "12", "06", "00")
+          DAYS_BACK_TO_TRY = 5
+          NUMERIC_RE = re.compile(r"[-+]?(?:\d+\.\d+|\d+|\.\d+)(?:[Ee][-+]?\d+)?")
+          STATION_RE = re.compile(r"\b\d{7}\b")
+
+          PRODUCTS = {
+              "mean": {
+                  "label": "Mean",
+                  "percentile": "Mean",
+                  "product": "mean",
+                  "filenameTokens": ["mean"]
+              },
+              "lowEnd": {
+                  "label": "Low End",
+                  "percentile": "90% exceedance / lower guidance",
+                  "product": "e90",
+                  "filenameTokens": ["e90"]
+              },
+              "highEnd": {
+                  "label": "High End",
+                  "percentile": "10% exceedance / upper guidance",
+                  "product": "e10",
+                  "filenameTokens": ["e10"]
+              }
+          }
+
+          def round_tenth(x):
+              return round(float(x) * 10.0) / 10.0
+
+          def clamp_stage(stage):
+              return max(MIN_LAYER_STAGE, min(MAX_LAYER_STAGE, stage))
+
+          def fetch_bytes(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+              with urllib.request.urlopen(req, timeout=180) as resp:
+                  return resp.read()
+
+          def try_fetch_text(url):
+              return fetch_bytes(url).decode("utf-8", errors="replace")
+
+          def try_fetch_tar_texts(url):
+              raw = fetch_bytes(url)
+              texts = []
+              with tarfile.open(fileobj=io.BytesIO(raw), mode="r:gz") as tf:
+                  for member in tf.getmembers():
+                      name = member.name.lower()
+                      if not member.isfile():
+                          continue
+                      if not (name.endswith(".txt") or name.endswith(".csv")):
+                          continue
+                      extracted = tf.extractfile(member)
+                      if extracted is None:
+                          continue
+                      texts.append((member.name, extracted.read().decode("utf-8", errors="replace")))
+              return texts
+
+          def plausible_raw_petss_value(x):
+              return -150.0 <= x <= 250.0
+
+          def numeric_values_from_text_blob(blob):
+              vals = []
+              for token in NUMERIC_RE.findall(blob):
+                  try:
+                      x = float(token)
+                  except Exception:
+                      continue
+                  if int(x) == int(STATION_ID) and abs(x - int(STATION_ID)) < 1e-9:
+                      continue
+                  if 1900 <= x <= 2100 and float(x).is_integer():
+                      continue
+                  if plausible_raw_petss_value(x):
+                      vals.append(x)
+              return vals
+
+          def parse_station_values_from_csv_like(text):
+              best = []
+              for delimiter in [",", "\t", ";", " "]:
+                  try:
+                      if delimiter == " ":
+                          rows = [re.split(r"\s+", line.strip()) for line in text.splitlines() if line.strip()]
+                      else:
+                          rows = csv.reader(io.StringIO(text), delimiter=delimiter)
+                      for row in rows:
+                          cells = [str(c).strip() for c in row if str(c).strip()]
+                          if not cells or STATION_ID not in " ".join(cells):
+                              continue
+                          vals = []
+                          for cell in cells:
+                              vals.extend(numeric_values_from_text_blob(cell))
+                          if len(vals) > len(best):
+                              best = vals
+                  except Exception:
+                      continue
+              return best
+
+          def parse_station_values_from_block(text):
+              lines = text.splitlines()
+              best = []
+              for idx, line in enumerate(lines):
+                  if STATION_ID not in line:
+                      continue
+                  block_lines = [line]
+                  for j in range(idx + 1, min(len(lines), idx + 20)):
+                      nxt = lines[j]
+                      ids = STATION_RE.findall(nxt)
+                      if ids and STATION_ID not in ids:
+                          break
+                      block_lines.append(nxt)
+                  vals = numeric_values_from_text_blob("\n".join(block_lines))
+                  if len(vals) > len(best):
+                      best = vals
+              return best
+
+          def parse_station_raw_values(text):
+              candidates = []
+              csv_vals = parse_station_values_from_csv_like(text)
+              if csv_vals:
+                  candidates.append(csv_vals)
+              block_vals = parse_station_values_from_block(text)
+              if block_vals:
+                  candidates.append(block_vals)
+              if not candidates:
+                  return []
+              vals = max(candidates, key=len)
+              return vals[:103] if len(vals) > 103 else vals
+
+          def petss_url_candidates(now_utc, product_key):
+              cfg = PRODUCTS[product_key]
+              tokens = cfg["filenameTokens"]
+              candidates = []
+              for days_back in range(DAYS_BACK_TO_TRY):
+                  day = (now_utc.date() - timedelta(days=days_back)).strftime("%Y%m%d")
+                  for cyc in CYCLES_NEWEST_FIRST:
+                      cycle_dt = datetime.strptime(day + cyc, "%Y%m%d%H").replace(tzinfo=timezone.utc)
+                      if cycle_dt > now_utc - timedelta(hours=1):
+                          continue
+                      base = f"https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.{day}"
+                      for token in tokens:
+                          candidates.append({
+                              "kind": "txt",
+                              "cycleUtc": cycle_dt,
+                              "token": token,
+                              "url": f"{base}/petss.t{cyc}z.{token}.stormtide.east.txt"
+                          })
+                      candidates.append({
+                          "kind": "tar",
+                          "cycleUtc": cycle_dt,
+                          "token": "csv.tar.gz",
+                          "url": f"{base}/petss.t{cyc}z.csv.tar.gz"
+                      })
+              return candidates
+
+          def member_matches_product(member_name, product_key):
+              if product_key == "mean":
+                  return "mean" in member_name.lower()
+              if product_key == "lowEnd":
+                  # PETSS lower guidance is e90: 90% exceedance, lower water level.
+                  name = member_name.lower()
+                  return "e90" in name
+              if product_key == "highEnd":
+                  # PETSS upper guidance is e10: 10% exceedance, higher water level.
+                  name = member_name.lower()
+                  return "e10" in name
+              return False
+
+          def find_latest_petss_values(now_utc, product_key):
+              errors = []
+              for cand in petss_url_candidates(now_utc, product_key):
+                  url = cand["url"]
+                  print(f"Trying {product_key}:", url)
+                  try:
+                      if cand["kind"] == "txt":
+                          text = try_fetch_text(url)
+                          raw_vals = parse_station_raw_values(text)
+                          if len(raw_vals) >= 24:
+                              return {
+                                  "rawValues": raw_vals,
+                                  "sourceUrl": url,
+                                  "sourceMember": None,
+                                  "cycleUtc": cand["cycleUtc"],
+                                  "token": cand["token"]
+                              }
+                          errors.append(f"{url}: station raw values not found or too short ({len(raw_vals)})")
+                      else:
+                          texts = try_fetch_tar_texts(url)
+                          best = None
+                          for member_name, text in texts:
+                              if not member_matches_product(member_name, product_key):
+                                  continue
+                              raw_vals = parse_station_raw_values(text)
+                              if raw_vals and (best is None or len(raw_vals) > len(best["rawValues"])):
+                                  best = {
+                                      "rawValues": raw_vals,
+                                      "sourceUrl": url,
+                                      "sourceMember": member_name,
+                                      "cycleUtc": cand["cycleUtc"],
+                                      "token": cand["token"]
+                                  }
+                          if best and len(best["rawValues"]) >= 24:
+                              return best
+                          errors.append(f"{url}: no {product_key} station raw values found in tar members")
+                  except Exception as exc:
+                      errors.append(f"{url}: {type(exc).__name__}: {exc}")
+              raise RuntimeError(
+                  f"Could not find usable PETSS {product_key} Avalon forecast values.\n" + "\n".join(errors[-25:])
+              )
+
+          def build_hours(raw_values, cycle_utc, now_utc):
+              values_navd88 = [float(v) * PETSS_RAW_SCALE for v in raw_values]
+              if values_navd88 and max(abs(v) for v in values_navd88) > 20:
+                  raise RuntimeError(
+                      f"Scaled PETSS values still look unrealistic: min={min(values_navd88)}, max={max(values_navd88)}"
+                  )
+              all_points = []
+              for i, navd88_value in enumerate(values_navd88):
+                  dt_utc = cycle_utc + timedelta(hours=i)
+                  all_points.append((dt_utc, float(navd88_value), float(raw_values[i])))
+              future_points = [(dt, navd, raw) for dt, navd, raw in all_points if dt >= now_utc]
+              selected_points = future_points[:MAX_HOURS] if len(future_points) >= MAX_HOURS else all_points[:MAX_HOURS]
+              if len(selected_points) < MAX_HOURS:
+                  raise RuntimeError(f"PETSS produced only {len(all_points)} hourly values; need at least {MAX_HOURS}.")
+
+              hours = []
+              for hour_index, (dt_utc, navd88_raw_ft, raw_petss_value) in enumerate(selected_points):
+                  navd88_ft = round_tenth(navd88_raw_ft)
+                  mllw_ft = round(navd88_ft - NAVD88_OFFSET_FROM_MLLW, 2)
+                  matched_ft = round_tenth(clamp_stage(navd88_ft))
+                  hours.append({
+                      "hourIndex": hour_index,
+                      "timeUtc": dt_utc.isoformat().replace("+00:00", "Z"),
+                      "rawPetssValue": raw_petss_value,
+                      "rawPetssScale": PETSS_RAW_SCALE,
+                      "sourceStageFt": navd88_ft,
+                      "sourceDatum": PETSS_SOURCE_DATUM,
+                      "navd88StageFt": navd88_ft,
+                      "mllwStageFt": mllw_ft,
+                      "matchedStageKey": f"{matched_ft:.1f}",
+                      "wasClamped": matched_ft != navd88_ft
+                  })
+              return hours, values_navd88
+
+          now_utc = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
+          product_results = {}
+          forecasts = {}
+          products_meta = {}
+          cycle_times = []
+
+          for product_key in ["lowEnd", "mean", "highEnd"]:
+              petss = find_latest_petss_values(now_utc, product_key)
+              raw_values = petss["rawValues"]
+              hours, values_navd88 = build_hours(raw_values, petss["cycleUtc"], now_utc)
+              cfg = PRODUCTS[product_key]
+              cycle_times.append(petss["cycleUtc"])
+              products_meta[product_key] = {
+                  "label": cfg["label"],
+                  "percentile": cfg["percentile"],
+                  "product": cfg["product"],
+                  "sourceUrl": petss["sourceUrl"],
+                  "sourceMember": petss["sourceMember"],
+                  "petssCycleUtc": petss["cycleUtc"].isoformat().replace("+00:00", "Z"),
+                  "rawPetssValueCount": len(raw_values),
+                  "rawPetssMin": min(raw_values),
+                  "rawPetssMax": max(raw_values),
+                  "scaledNavd88Min": min(values_navd88),
+                  "scaledNavd88Max": max(values_navd88)
+              }
+              forecasts[product_key] = {
+                  "label": cfg["label"],
+                  "percentile": cfg["percentile"],
+                  "product": cfg["product"],
+                  "hours": hours
+              }
+
+          mean_hours = forecasts["mean"]["hours"]
+          payload = {
+              "stationId": STATION_ID,
+              "stationName": STATION_NAME,
+              "issuedUtc": now_utc.isoformat().replace("+00:00", "Z"),
+              "petssCycleUtc": max(cycle_times).isoformat().replace("+00:00", "Z"),
+              "sourceUrl": products_meta["mean"]["sourceUrl"],
+              "sourceMember": products_meta["mean"]["sourceMember"],
+              "sourceType": "PETSS_mean_e90_e10_stormtide_east_hourly_tenths_ft_NAVD88",
+              "sourceDatum": PETSS_SOURCE_DATUM,
+              "mapDatum": "NAVD88",
+              "rawPetssScale": PETSS_RAW_SCALE,
+              "navd88OffsetFromMllwFt": NAVD88_OFFSET_FROM_MLLW,
+              "thresholdsMLLW": THRESHOLDS_MLLW,
+              "thresholdsNAVD88": THRESHOLDS_NAVD88,
+              "layerStageRangeNAVD88": {
+                  "min": MIN_LAYER_STAGE,
+                  "max": MAX_LAYER_STAGE,
+                  "increment": 0.1
+              },
+              "forecastOptions": {
+                  key: {
+                      "label": cfg["label"],
+                      "percentile": cfg["percentile"],
+                      "product": cfg["product"]
+                  }
+                  for key, cfg in PRODUCTS.items()
+              },
+              "products": products_meta,
+              "forecasts": forecasts,
+              "rawPetssValueCount": products_meta["mean"]["rawPetssValueCount"],
+              "hours": mean_hours
+          }
+
+          OUT_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+          print("Wrote", OUT_PATH)
+          for key in ["lowEnd", "mean", "highEnd"]:
+              meta = products_meta[key]
+              print(f"{key}: {meta['sourceUrl']} member={meta['sourceMember']} raw={meta['rawPetssValueCount']} navd88=({meta['scaledNavd88Min']}, {meta['scaledNavd88Max']})")
+          PY
+
+      - name: Commit updated forecast
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forecast.json
+          git diff --staged --quiet || git commit -m "Update Avalon forecast"
+          git push
