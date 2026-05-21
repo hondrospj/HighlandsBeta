@@ -1,9 +1,9 @@
 {
   "stationId": "8531804",
   "stationName": "SEA BRIGHT, NJ",
-  "issuedUtc": "2026-05-20T22:00:00Z",
-  "petssCycleUtc": "2026-05-20T12:00:00Z",
-  "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t12z.mean.stormtide.east.txt",
+  "issuedUtc": "2026-05-21T01:00:00Z",
+  "petssCycleUtc": "2026-05-20T18:00:00Z",
+  "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t18z.mean.stormtide.east.txt",
   "sourceMember": null,
   "sourceType": "PETSS_mean_e90_e10_stormtide_east_hourly_tenths_ft_NAVD88",
   "sourceDatum": "NAVD88",
@@ -47,35 +47,35 @@
       "label": "Low End",
       "percentile": "90% exceedance / lower guidance",
       "product": "e90",
-      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t12z.e90.stormtide.east.txt",
+      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t18z.e90.stormtide.east.txt",
       "sourceMember": null,
-      "petssCycleUtc": "2026-05-20T12:00:00Z",
-      "rawPetssValueCount": 103,
-      "rawPetssMin": -11.0,
-      "rawPetssMax": 13.0,
-      "scaledNavd88Min": -1.1,
-      "scaledNavd88Max": 1.3
-    },
-    "mean": {
-      "label": "Mean",
-      "percentile": "Mean",
-      "product": "mean",
-      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t12z.mean.stormtide.east.txt",
-      "sourceMember": null,
-      "petssCycleUtc": "2026-05-20T12:00:00Z",
+      "petssCycleUtc": "2026-05-20T18:00:00Z",
       "rawPetssValueCount": 103,
       "rawPetssMin": -11.0,
       "rawPetssMax": 14.0,
       "scaledNavd88Min": -1.1,
       "scaledNavd88Max": 1.4000000000000001
     },
+    "mean": {
+      "label": "Mean",
+      "percentile": "Mean",
+      "product": "mean",
+      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t18z.mean.stormtide.east.txt",
+      "sourceMember": null,
+      "petssCycleUtc": "2026-05-20T18:00:00Z",
+      "rawPetssValueCount": 103,
+      "rawPetssMin": -10.0,
+      "rawPetssMax": 15.0,
+      "scaledNavd88Min": -1.0,
+      "scaledNavd88Max": 1.5
+    },
     "highEnd": {
       "label": "High End",
       "percentile": "10% exceedance / upper guidance",
       "product": "e10",
-      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t12z.e10.stormtide.east.txt",
+      "sourceUrl": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/petss/prod/petss.20260520/petss.t18z.e10.stormtide.east.txt",
       "sourceMember": null,
-      "petssCycleUtc": "2026-05-20T12:00:00Z",
+      "petssCycleUtc": "2026-05-20T18:00:00Z",
       "rawPetssValueCount": 103,
       "rawPetssMin": -10.0,
       "rawPetssMax": 18.0,
@@ -91,42 +91,6 @@
       "hours": [
         {
           "hourIndex": 0,
-          "timeUtc": "2026-05-20T22:00:00Z",
-          "rawPetssValue": -11.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -1.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -1.1,
-          "mllwStageFt": 1.03,
-          "matchedStageKey": "-1.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 1,
-          "timeUtc": "2026-05-20T23:00:00Z",
-          "rawPetssValue": -9.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.9,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.9,
-          "mllwStageFt": 1.23,
-          "matchedStageKey": "-0.9",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 2,
-          "timeUtc": "2026-05-21T00:00:00Z",
-          "rawPetssValue": -4.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 3,
           "timeUtc": "2026-05-21T01:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -138,7 +102,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 4,
+          "hourIndex": 1,
           "timeUtc": "2026-05-21T02:00:00Z",
           "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
@@ -150,19 +114,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 5,
+          "hourIndex": 2,
           "timeUtc": "2026-05-21T03:00:00Z",
-          "rawPetssValue": 8.0,
+          "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
+          "sourceStageFt": 0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 6,
+          "hourIndex": 3,
           "timeUtc": "2026-05-21T04:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
@@ -174,7 +138,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 7,
+          "hourIndex": 4,
           "timeUtc": "2026-05-21T05:00:00Z",
           "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
@@ -186,7 +150,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 8,
+          "hourIndex": 5,
           "timeUtc": "2026-05-21T06:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
@@ -198,7 +162,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 9,
+          "hourIndex": 6,
           "timeUtc": "2026-05-21T07:00:00Z",
           "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
@@ -210,7 +174,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 10,
+          "hourIndex": 7,
           "timeUtc": "2026-05-21T08:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -222,7 +186,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 11,
+          "hourIndex": 8,
           "timeUtc": "2026-05-21T09:00:00Z",
           "rawPetssValue": -7.0,
           "rawPetssScale": 0.1,
@@ -234,31 +198,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 12,
+          "hourIndex": 9,
           "timeUtc": "2026-05-21T10:00:00Z",
-          "rawPetssValue": -10.0,
+          "rawPetssValue": -9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -1.0,
+          "sourceStageFt": -0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -1.0,
-          "mllwStageFt": 1.13,
-          "matchedStageKey": "-1.0",
+          "navd88StageFt": -0.9,
+          "mllwStageFt": 1.23,
+          "matchedStageKey": "-0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 13,
+          "hourIndex": 10,
           "timeUtc": "2026-05-21T11:00:00Z",
-          "rawPetssValue": -10.0,
+          "rawPetssValue": -9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -1.0,
+          "sourceStageFt": -0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -1.0,
-          "mllwStageFt": 1.13,
-          "matchedStageKey": "-1.0",
+          "navd88StageFt": -0.9,
+          "mllwStageFt": 1.23,
+          "matchedStageKey": "-0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 14,
+          "hourIndex": 11,
           "timeUtc": "2026-05-21T12:00:00Z",
           "rawPetssValue": -7.0,
           "rawPetssScale": 0.1,
@@ -270,7 +234,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 15,
+          "hourIndex": 12,
           "timeUtc": "2026-05-21T13:00:00Z",
           "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
@@ -282,7 +246,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 16,
+          "hourIndex": 13,
           "timeUtc": "2026-05-21T14:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -294,7 +258,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 17,
+          "hourIndex": 14,
           "timeUtc": "2026-05-21T15:00:00Z",
           "rawPetssValue": 3.0,
           "rawPetssScale": 0.1,
@@ -306,7 +270,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 18,
+          "hourIndex": 15,
           "timeUtc": "2026-05-21T16:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
@@ -318,7 +282,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 19,
+          "hourIndex": 16,
           "timeUtc": "2026-05-21T17:00:00Z",
           "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
@@ -330,7 +294,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 20,
+          "hourIndex": 17,
           "timeUtc": "2026-05-21T18:00:00Z",
           "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
@@ -342,7 +306,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 21,
+          "hourIndex": 18,
           "timeUtc": "2026-05-21T19:00:00Z",
           "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
@@ -354,7 +318,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 22,
+          "hourIndex": 19,
           "timeUtc": "2026-05-21T20:00:00Z",
           "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
@@ -366,7 +330,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 23,
+          "hourIndex": 20,
           "timeUtc": "2026-05-21T21:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -378,31 +342,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 24,
+          "hourIndex": 21,
           "timeUtc": "2026-05-21T22:00:00Z",
-          "rawPetssValue": -7.0,
+          "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
+          "sourceStageFt": -0.6,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
+          "navd88StageFt": -0.6,
+          "mllwStageFt": 1.53,
+          "matchedStageKey": "-0.6",
           "wasClamped": false
         },
         {
-          "hourIndex": 25,
+          "hourIndex": 22,
           "timeUtc": "2026-05-21T23:00:00Z",
-          "rawPetssValue": -7.0,
+          "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
+          "sourceStageFt": -0.6,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
+          "navd88StageFt": -0.6,
+          "mllwStageFt": 1.53,
+          "matchedStageKey": "-0.6",
           "wasClamped": false
         },
         {
-          "hourIndex": 26,
+          "hourIndex": 23,
           "timeUtc": "2026-05-22T00:00:00Z",
           "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
@@ -414,7 +378,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 27,
+          "hourIndex": 24,
           "timeUtc": "2026-05-22T01:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -426,19 +390,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 28,
+          "hourIndex": 25,
           "timeUtc": "2026-05-22T02:00:00Z",
-          "rawPetssValue": 3.0,
+          "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.3,
+          "sourceStageFt": 0.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.3,
-          "mllwStageFt": 2.43,
-          "matchedStageKey": "0.3",
+          "navd88StageFt": 0.4,
+          "mllwStageFt": 2.53,
+          "matchedStageKey": "0.4",
           "wasClamped": false
         },
         {
-          "hourIndex": 29,
+          "hourIndex": 26,
           "timeUtc": "2026-05-22T03:00:00Z",
           "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
@@ -450,32 +414,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 30,
+          "hourIndex": 27,
           "timeUtc": "2026-05-22T04:00:00Z",
-          "rawPetssValue": 11.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.1,
-          "mllwStageFt": 3.23,
-          "matchedStageKey": "1.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 31,
-          "timeUtc": "2026-05-22T05:00:00Z",
-          "rawPetssValue": 13.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.3,
-          "mllwStageFt": 3.43,
-          "matchedStageKey": "1.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 32,
-          "timeUtc": "2026-05-22T06:00:00Z",
           "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.2,
@@ -486,55 +426,79 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 33,
-          "timeUtc": "2026-05-22T07:00:00Z",
-          "rawPetssValue": 8.0,
+          "hourIndex": 28,
+          "timeUtc": "2026-05-22T05:00:00Z",
+          "rawPetssValue": 14.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
+          "sourceStageFt": 1.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
+          "navd88StageFt": 1.4,
+          "mllwStageFt": 3.53,
+          "matchedStageKey": "1.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 29,
+          "timeUtc": "2026-05-22T06:00:00Z",
+          "rawPetssValue": 13.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.3,
+          "mllwStageFt": 3.43,
+          "matchedStageKey": "1.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 30,
+          "timeUtc": "2026-05-22T07:00:00Z",
+          "rawPetssValue": 9.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.9,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 31,
+          "timeUtc": "2026-05-22T08:00:00Z",
+          "rawPetssValue": 4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.4,
+          "mllwStageFt": 2.53,
+          "matchedStageKey": "0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 32,
+          "timeUtc": "2026-05-22T09:00:00Z",
+          "rawPetssValue": 0.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 33,
+          "timeUtc": "2026-05-22T10:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
           "wasClamped": false
         },
         {
           "hourIndex": 34,
-          "timeUtc": "2026-05-22T08:00:00Z",
-          "rawPetssValue": 3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.3,
-          "mllwStageFt": 2.43,
-          "matchedStageKey": "0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 35,
-          "timeUtc": "2026-05-22T09:00:00Z",
-          "rawPetssValue": -1.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.1,
-          "mllwStageFt": 2.03,
-          "matchedStageKey": "-0.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 36,
-          "timeUtc": "2026-05-22T10:00:00Z",
-          "rawPetssValue": -5.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 37,
           "timeUtc": "2026-05-22T11:00:00Z",
           "rawPetssValue": -7.0,
           "rawPetssScale": 0.1,
@@ -546,7 +510,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 38,
+          "hourIndex": 35,
           "timeUtc": "2026-05-22T12:00:00Z",
           "rawPetssValue": -7.0,
           "rawPetssScale": 0.1,
@@ -558,7 +522,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 39,
+          "hourIndex": 36,
           "timeUtc": "2026-05-22T13:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -570,31 +534,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 40,
+          "hourIndex": 37,
           "timeUtc": "2026-05-22T14:00:00Z",
-          "rawPetssValue": -2.0,
+          "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.2,
+          "sourceStageFt": -0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.2,
-          "mllwStageFt": 1.93,
-          "matchedStageKey": "-0.2",
+          "navd88StageFt": -0.1,
+          "mllwStageFt": 2.03,
+          "matchedStageKey": "-0.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 41,
+          "hourIndex": 38,
           "timeUtc": "2026-05-22T15:00:00Z",
-          "rawPetssValue": 1.0,
+          "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.1,
+          "sourceStageFt": 0.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.1,
-          "mllwStageFt": 2.23,
-          "matchedStageKey": "0.1",
+          "navd88StageFt": 0.2,
+          "mllwStageFt": 2.33,
+          "matchedStageKey": "0.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 42,
+          "hourIndex": 39,
           "timeUtc": "2026-05-22T16:00:00Z",
           "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
@@ -606,19 +570,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 43,
+          "hourIndex": 40,
           "timeUtc": "2026-05-22T17:00:00Z",
-          "rawPetssValue": 8.0,
+          "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
+          "sourceStageFt": 0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 44,
+          "hourIndex": 41,
           "timeUtc": "2026-05-22T18:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -630,31 +594,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 45,
+          "hourIndex": 42,
           "timeUtc": "2026-05-22T19:00:00Z",
-          "rawPetssValue": 7.0,
+          "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.7,
+          "sourceStageFt": 0.8,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.7,
-          "mllwStageFt": 2.83,
-          "matchedStageKey": "0.7",
+          "navd88StageFt": 0.8,
+          "mllwStageFt": 2.93,
+          "matchedStageKey": "0.8",
           "wasClamped": false
         },
         {
-          "hourIndex": 46,
+          "hourIndex": 43,
           "timeUtc": "2026-05-22T20:00:00Z",
-          "rawPetssValue": 3.0,
+          "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.3,
+          "sourceStageFt": 0.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.3,
-          "mllwStageFt": 2.43,
-          "matchedStageKey": "0.3",
+          "navd88StageFt": 0.4,
+          "mllwStageFt": 2.53,
+          "matchedStageKey": "0.4",
           "wasClamped": false
         },
         {
-          "hourIndex": 47,
+          "hourIndex": 44,
           "timeUtc": "2026-05-22T21:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -666,31 +630,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 48,
+          "hourIndex": 45,
           "timeUtc": "2026-05-22T22:00:00Z",
-          "rawPetssValue": -4.0,
+          "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": -0.3,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
           "wasClamped": false
         },
         {
-          "hourIndex": 49,
+          "hourIndex": 46,
           "timeUtc": "2026-05-22T23:00:00Z",
-          "rawPetssValue": -6.0,
+          "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.6,
+          "sourceStageFt": -0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.6,
-          "mllwStageFt": 1.53,
-          "matchedStageKey": "-0.6",
+          "navd88StageFt": -0.5,
+          "mllwStageFt": 1.63,
+          "matchedStageKey": "-0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 50,
+          "hourIndex": 47,
           "timeUtc": "2026-05-23T00:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -702,43 +666,43 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 51,
+          "hourIndex": 48,
           "timeUtc": "2026-05-23T01:00:00Z",
-          "rawPetssValue": -5.0,
+          "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
+          "sourceStageFt": -0.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
           "wasClamped": false
         },
         {
-          "hourIndex": 52,
+          "hourIndex": 49,
           "timeUtc": "2026-05-23T02:00:00Z",
-          "rawPetssValue": -2.0,
+          "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.2,
+          "sourceStageFt": -0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.2,
-          "mllwStageFt": 1.93,
-          "matchedStageKey": "-0.2",
+          "navd88StageFt": -0.1,
+          "mllwStageFt": 2.03,
+          "matchedStageKey": "-0.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 53,
+          "hourIndex": 50,
           "timeUtc": "2026-05-23T03:00:00Z",
-          "rawPetssValue": 1.0,
+          "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.1,
+          "sourceStageFt": 0.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.1,
-          "mllwStageFt": 2.23,
-          "matchedStageKey": "0.1",
+          "navd88StageFt": 0.2,
+          "mllwStageFt": 2.33,
+          "matchedStageKey": "0.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 54,
+          "hourIndex": 51,
           "timeUtc": "2026-05-23T04:00:00Z",
           "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
@@ -750,20 +714,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 55,
+          "hourIndex": 52,
           "timeUtc": "2026-05-23T05:00:00Z",
-          "rawPetssValue": 9.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.9,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.9,
-          "mllwStageFt": 3.03,
-          "matchedStageKey": "0.9",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 56,
-          "timeUtc": "2026-05-23T06:00:00Z",
           "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.0,
@@ -774,19 +726,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 57,
-          "timeUtc": "2026-05-23T07:00:00Z",
-          "rawPetssValue": 9.0,
+          "hourIndex": 53,
+          "timeUtc": "2026-05-23T06:00:00Z",
+          "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.9,
+          "sourceStageFt": 1.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.9,
-          "mllwStageFt": 3.03,
-          "matchedStageKey": "0.9",
+          "navd88StageFt": 1.1,
+          "mllwStageFt": 3.23,
+          "matchedStageKey": "1.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 58,
+          "hourIndex": 54,
+          "timeUtc": "2026-05-23T07:00:00Z",
+          "rawPetssValue": 10.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.0,
+          "mllwStageFt": 3.13,
+          "matchedStageKey": "1.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 55,
           "timeUtc": "2026-05-23T08:00:00Z",
           "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
@@ -798,19 +762,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 59,
+          "hourIndex": 56,
           "timeUtc": "2026-05-23T09:00:00Z",
-          "rawPetssValue": 1.0,
+          "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.1,
+          "sourceStageFt": 0.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.1,
-          "mllwStageFt": 2.23,
-          "matchedStageKey": "0.1",
+          "navd88StageFt": 0.2,
+          "mllwStageFt": 2.33,
+          "matchedStageKey": "0.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 60,
+          "hourIndex": 57,
           "timeUtc": "2026-05-23T10:00:00Z",
           "rawPetssValue": -2.0,
           "rawPetssScale": 0.1,
@@ -822,19 +786,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 61,
+          "hourIndex": 58,
           "timeUtc": "2026-05-23T11:00:00Z",
-          "rawPetssValue": -6.0,
+          "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.6,
+          "sourceStageFt": -0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.6,
-          "mllwStageFt": 1.53,
-          "matchedStageKey": "-0.6",
+          "navd88StageFt": -0.5,
+          "mllwStageFt": 1.63,
+          "matchedStageKey": "-0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 62,
+          "hourIndex": 59,
           "timeUtc": "2026-05-23T12:00:00Z",
           "rawPetssValue": -8.0,
           "rawPetssScale": 0.1,
@@ -846,7 +810,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 63,
+          "hourIndex": 60,
           "timeUtc": "2026-05-23T13:00:00Z",
           "rawPetssValue": -8.0,
           "rawPetssScale": 0.1,
@@ -858,7 +822,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 64,
+          "hourIndex": 61,
           "timeUtc": "2026-05-23T14:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -870,43 +834,43 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 65,
+          "hourIndex": 62,
           "timeUtc": "2026-05-23T15:00:00Z",
-          "rawPetssValue": -3.0,
+          "rawPetssValue": -2.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.3,
+          "sourceStageFt": -0.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.3,
-          "mllwStageFt": 1.83,
-          "matchedStageKey": "-0.3",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 66,
+          "hourIndex": 63,
           "timeUtc": "2026-05-23T16:00:00Z",
-          "rawPetssValue": 0.0,
+          "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
+          "sourceStageFt": 0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 67,
+          "hourIndex": 64,
           "timeUtc": "2026-05-23T17:00:00Z",
-          "rawPetssValue": 4.0,
+          "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
+          "sourceStageFt": 0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 68,
+          "hourIndex": 65,
           "timeUtc": "2026-05-23T18:00:00Z",
           "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
@@ -918,19 +882,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 69,
+          "hourIndex": 66,
           "timeUtc": "2026-05-23T19:00:00Z",
-          "rawPetssValue": 8.0,
+          "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
+          "sourceStageFt": 0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 70,
+          "hourIndex": 67,
           "timeUtc": "2026-05-23T20:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
@@ -942,7 +906,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 71,
+          "hourIndex": 68,
           "timeUtc": "2026-05-23T21:00:00Z",
           "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
@@ -951,6 +915,42 @@
           "navd88StageFt": 0.4,
           "mllwStageFt": 2.53,
           "matchedStageKey": "0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 69,
+          "timeUtc": "2026-05-23T22:00:00Z",
+          "rawPetssValue": 0.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 70,
+          "timeUtc": "2026-05-23T23:00:00Z",
+          "rawPetssValue": -3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 71,
+          "timeUtc": "2026-05-24T00:00:00Z",
+          "rawPetssValue": -5.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.5,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.5,
+          "mllwStageFt": 1.63,
+          "matchedStageKey": "-0.5",
           "wasClamped": false
         }
       ]
@@ -962,66 +962,30 @@
       "hours": [
         {
           "hourIndex": 0,
-          "timeUtc": "2026-05-20T22:00:00Z",
-          "rawPetssValue": -10.0,
+          "timeUtc": "2026-05-21T01:00:00Z",
+          "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -1.0,
+          "sourceStageFt": 0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -1.0,
-          "mllwStageFt": 1.13,
-          "matchedStageKey": "-1.0",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
           "wasClamped": false
         },
         {
           "hourIndex": 1,
-          "timeUtc": "2026-05-20T23:00:00Z",
-          "rawPetssValue": -8.0,
+          "timeUtc": "2026-05-21T02:00:00Z",
+          "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.8,
+          "sourceStageFt": 0.6,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.8,
-          "mllwStageFt": 1.33,
-          "matchedStageKey": "-0.8",
+          "navd88StageFt": 0.6,
+          "mllwStageFt": 2.73,
+          "matchedStageKey": "0.6",
           "wasClamped": false
         },
         {
           "hourIndex": 2,
-          "timeUtc": "2026-05-21T00:00:00Z",
-          "rawPetssValue": -4.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 3,
-          "timeUtc": "2026-05-21T01:00:00Z",
-          "rawPetssValue": 0.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 4,
-          "timeUtc": "2026-05-21T02:00:00Z",
-          "rawPetssValue": 5.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.5,
-          "mllwStageFt": 2.63,
-          "matchedStageKey": "0.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 5,
           "timeUtc": "2026-05-21T03:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -1033,7 +997,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 6,
+          "hourIndex": 3,
           "timeUtc": "2026-05-21T04:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
@@ -1045,7 +1009,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 7,
+          "hourIndex": 4,
           "timeUtc": "2026-05-21T05:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
@@ -1057,7 +1021,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 8,
+          "hourIndex": 5,
           "timeUtc": "2026-05-21T06:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
@@ -1069,7 +1033,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 9,
+          "hourIndex": 6,
           "timeUtc": "2026-05-21T07:00:00Z",
           "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
@@ -1081,31 +1045,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 10,
+          "hourIndex": 7,
           "timeUtc": "2026-05-21T08:00:00Z",
-          "rawPetssValue": -3.0,
+          "rawPetssValue": -2.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.3,
+          "sourceStageFt": -0.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.3,
-          "mllwStageFt": 1.83,
-          "matchedStageKey": "-0.3",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 11,
+          "hourIndex": 8,
           "timeUtc": "2026-05-21T09:00:00Z",
-          "rawPetssValue": -7.0,
+          "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
+          "sourceStageFt": -0.6,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
+          "navd88StageFt": -0.6,
+          "mllwStageFt": 1.53,
+          "matchedStageKey": "-0.6",
           "wasClamped": false
         },
         {
-          "hourIndex": 12,
+          "hourIndex": 9,
           "timeUtc": "2026-05-21T10:00:00Z",
           "rawPetssValue": -9.0,
           "rawPetssScale": 0.1,
@@ -1117,7 +1081,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 13,
+          "hourIndex": 10,
           "timeUtc": "2026-05-21T11:00:00Z",
           "rawPetssValue": -9.0,
           "rawPetssScale": 0.1,
@@ -1129,7 +1093,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 14,
+          "hourIndex": 11,
           "timeUtc": "2026-05-21T12:00:00Z",
           "rawPetssValue": -7.0,
           "rawPetssScale": 0.1,
@@ -1141,7 +1105,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 15,
+          "hourIndex": 12,
           "timeUtc": "2026-05-21T13:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -1153,7 +1117,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 16,
+          "hourIndex": 13,
           "timeUtc": "2026-05-21T14:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -1165,7 +1129,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 17,
+          "hourIndex": 14,
           "timeUtc": "2026-05-21T15:00:00Z",
           "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
@@ -1177,7 +1141,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 18,
+          "hourIndex": 15,
           "timeUtc": "2026-05-21T16:00:00Z",
           "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
@@ -1189,7 +1153,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 19,
+          "hourIndex": 16,
           "timeUtc": "2026-05-21T17:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -1201,7 +1165,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 20,
+          "hourIndex": 17,
           "timeUtc": "2026-05-21T18:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
@@ -1213,7 +1177,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 21,
+          "hourIndex": 18,
           "timeUtc": "2026-05-21T19:00:00Z",
           "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
@@ -1225,7 +1189,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 22,
+          "hourIndex": 19,
           "timeUtc": "2026-05-21T20:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -1237,7 +1201,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 23,
+          "hourIndex": 20,
           "timeUtc": "2026-05-21T21:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -1249,7 +1213,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 24,
+          "hourIndex": 21,
           "timeUtc": "2026-05-21T22:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -1261,7 +1225,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 25,
+          "hourIndex": 22,
           "timeUtc": "2026-05-21T23:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -1273,7 +1237,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 26,
+          "hourIndex": 23,
           "timeUtc": "2026-05-22T00:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -1285,31 +1249,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 27,
+          "hourIndex": 24,
           "timeUtc": "2026-05-22T01:00:00Z",
-          "rawPetssValue": 0.0,
+          "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
+          "sourceStageFt": 0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 28,
+          "hourIndex": 25,
           "timeUtc": "2026-05-22T02:00:00Z",
-          "rawPetssValue": 4.0,
+          "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
+          "sourceStageFt": 0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 29,
+          "hourIndex": 26,
           "timeUtc": "2026-05-22T03:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -1321,32 +1285,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 30,
+          "hourIndex": 27,
           "timeUtc": "2026-05-22T04:00:00Z",
-          "rawPetssValue": 12.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.2,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.2,
-          "mllwStageFt": 3.33,
-          "matchedStageKey": "1.2",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 31,
-          "timeUtc": "2026-05-22T05:00:00Z",
-          "rawPetssValue": 14.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.4,
-          "mllwStageFt": 3.53,
-          "matchedStageKey": "1.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 32,
-          "timeUtc": "2026-05-22T06:00:00Z",
           "rawPetssValue": 13.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.3,
@@ -1357,7 +1297,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 33,
+          "hourIndex": 28,
+          "timeUtc": "2026-05-22T05:00:00Z",
+          "rawPetssValue": 15.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.5,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.5,
+          "mllwStageFt": 3.63,
+          "matchedStageKey": "1.5",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 29,
+          "timeUtc": "2026-05-22T06:00:00Z",
+          "rawPetssValue": 14.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.4,
+          "mllwStageFt": 3.53,
+          "matchedStageKey": "1.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 30,
           "timeUtc": "2026-05-22T07:00:00Z",
           "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
@@ -1369,19 +1333,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 34,
+          "hourIndex": 31,
           "timeUtc": "2026-05-22T08:00:00Z",
-          "rawPetssValue": 4.0,
+          "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
+          "sourceStageFt": 0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 35,
+          "hourIndex": 32,
           "timeUtc": "2026-05-22T09:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -1393,19 +1357,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 36,
+          "hourIndex": 33,
           "timeUtc": "2026-05-22T10:00:00Z",
-          "rawPetssValue": -4.0,
+          "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": -0.3,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
           "wasClamped": false
         },
         {
-          "hourIndex": 37,
+          "hourIndex": 34,
           "timeUtc": "2026-05-22T11:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -1417,7 +1381,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 38,
+          "hourIndex": 35,
           "timeUtc": "2026-05-22T12:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -1429,7 +1393,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 39,
+          "hourIndex": 36,
           "timeUtc": "2026-05-22T13:00:00Z",
           "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
@@ -1441,92 +1405,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 40,
+          "hourIndex": 37,
           "timeUtc": "2026-05-22T14:00:00Z",
-          "rawPetssValue": -1.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.1,
-          "mllwStageFt": 2.03,
-          "matchedStageKey": "-0.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 41,
-          "timeUtc": "2026-05-22T15:00:00Z",
-          "rawPetssValue": 2.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.2,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.2,
-          "mllwStageFt": 2.33,
-          "matchedStageKey": "0.2",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 42,
-          "timeUtc": "2026-05-22T16:00:00Z",
-          "rawPetssValue": 6.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.6,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.6,
-          "mllwStageFt": 2.73,
-          "matchedStageKey": "0.6",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 43,
-          "timeUtc": "2026-05-22T17:00:00Z",
-          "rawPetssValue": 9.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.9,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.9,
-          "mllwStageFt": 3.03,
-          "matchedStageKey": "0.9",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 44,
-          "timeUtc": "2026-05-22T18:00:00Z",
-          "rawPetssValue": 10.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.0,
-          "mllwStageFt": 3.13,
-          "matchedStageKey": "1.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 45,
-          "timeUtc": "2026-05-22T19:00:00Z",
-          "rawPetssValue": 8.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 46,
-          "timeUtc": "2026-05-22T20:00:00Z",
-          "rawPetssValue": 4.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 47,
-          "timeUtc": "2026-05-22T21:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 0.0,
@@ -1537,8 +1417,128 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 48,
+          "hourIndex": 38,
+          "timeUtc": "2026-05-22T15:00:00Z",
+          "rawPetssValue": 3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.3,
+          "mllwStageFt": 2.43,
+          "matchedStageKey": "0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 39,
+          "timeUtc": "2026-05-22T16:00:00Z",
+          "rawPetssValue": 7.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.7,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.7,
+          "mllwStageFt": 2.83,
+          "matchedStageKey": "0.7",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 40,
+          "timeUtc": "2026-05-22T17:00:00Z",
+          "rawPetssValue": 10.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.0,
+          "mllwStageFt": 3.13,
+          "matchedStageKey": "1.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 41,
+          "timeUtc": "2026-05-22T18:00:00Z",
+          "rawPetssValue": 11.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.1,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.1,
+          "mllwStageFt": 3.23,
+          "matchedStageKey": "1.1",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 42,
+          "timeUtc": "2026-05-22T19:00:00Z",
+          "rawPetssValue": 9.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.9,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 43,
+          "timeUtc": "2026-05-22T20:00:00Z",
+          "rawPetssValue": 5.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.5,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 44,
+          "timeUtc": "2026-05-22T21:00:00Z",
+          "rawPetssValue": 1.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.1,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 45,
           "timeUtc": "2026-05-22T22:00:00Z",
+          "rawPetssValue": -2.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 46,
+          "timeUtc": "2026-05-22T23:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 47,
+          "timeUtc": "2026-05-23T00:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 48,
+          "timeUtc": "2026-05-23T01:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": -0.3,
@@ -1550,90 +1550,54 @@
         },
         {
           "hourIndex": 49,
-          "timeUtc": "2026-05-22T23:00:00Z",
-          "rawPetssValue": -5.0,
+          "timeUtc": "2026-05-23T02:00:00Z",
+          "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
+          "sourceStageFt": 0.0,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
           "wasClamped": false
         },
         {
           "hourIndex": 50,
-          "timeUtc": "2026-05-23T00:00:00Z",
-          "rawPetssValue": -5.0,
+          "timeUtc": "2026-05-23T03:00:00Z",
+          "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
+          "sourceStageFt": 0.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
+          "navd88StageFt": 0.4,
+          "mllwStageFt": 2.53,
+          "matchedStageKey": "0.4",
           "wasClamped": false
         },
         {
           "hourIndex": 51,
-          "timeUtc": "2026-05-23T01:00:00Z",
-          "rawPetssValue": -4.0,
+          "timeUtc": "2026-05-23T04:00:00Z",
+          "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": 0.8,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": 0.8,
+          "mllwStageFt": 2.93,
+          "matchedStageKey": "0.8",
           "wasClamped": false
         },
         {
           "hourIndex": 52,
-          "timeUtc": "2026-05-23T02:00:00Z",
-          "rawPetssValue": -1.0,
+          "timeUtc": "2026-05-23T05:00:00Z",
+          "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.1,
+          "sourceStageFt": 1.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.1,
-          "mllwStageFt": 2.03,
-          "matchedStageKey": "-0.1",
+          "navd88StageFt": 1.1,
+          "mllwStageFt": 3.23,
+          "matchedStageKey": "1.1",
           "wasClamped": false
         },
         {
           "hourIndex": 53,
-          "timeUtc": "2026-05-23T03:00:00Z",
-          "rawPetssValue": 3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.3,
-          "mllwStageFt": 2.43,
-          "matchedStageKey": "0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 54,
-          "timeUtc": "2026-05-23T04:00:00Z",
-          "rawPetssValue": 7.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.7,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.7,
-          "mllwStageFt": 2.83,
-          "matchedStageKey": "0.7",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 55,
-          "timeUtc": "2026-05-23T05:00:00Z",
-          "rawPetssValue": 10.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.0,
-          "mllwStageFt": 3.13,
-          "matchedStageKey": "1.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 56,
           "timeUtc": "2026-05-23T06:00:00Z",
           "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
@@ -1645,7 +1609,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 57,
+          "hourIndex": 54,
           "timeUtc": "2026-05-23T07:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
@@ -1657,19 +1621,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 58,
+          "hourIndex": 55,
           "timeUtc": "2026-05-23T08:00:00Z",
-          "rawPetssValue": 7.0,
+          "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.7,
+          "sourceStageFt": 0.8,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.7,
-          "mllwStageFt": 2.83,
-          "matchedStageKey": "0.7",
+          "navd88StageFt": 0.8,
+          "mllwStageFt": 2.93,
+          "matchedStageKey": "0.8",
           "wasClamped": false
         },
         {
-          "hourIndex": 59,
+          "hourIndex": 56,
           "timeUtc": "2026-05-23T09:00:00Z",
           "rawPetssValue": 3.0,
           "rawPetssScale": 0.1,
@@ -1681,7 +1645,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 60,
+          "hourIndex": 57,
           "timeUtc": "2026-05-23T10:00:00Z",
           "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
@@ -1693,55 +1657,55 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 61,
+          "hourIndex": 58,
           "timeUtc": "2026-05-23T11:00:00Z",
-          "rawPetssValue": -5.0,
+          "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
+          "sourceStageFt": -0.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 59,
+          "timeUtc": "2026-05-23T12:00:00Z",
+          "rawPetssValue": -6.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.6,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.6,
+          "mllwStageFt": 1.53,
+          "matchedStageKey": "-0.6",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 60,
+          "timeUtc": "2026-05-23T13:00:00Z",
+          "rawPetssValue": -6.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.6,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.6,
+          "mllwStageFt": 1.53,
+          "matchedStageKey": "-0.6",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 61,
+          "timeUtc": "2026-05-23T14:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
           "wasClamped": false
         },
         {
           "hourIndex": 62,
-          "timeUtc": "2026-05-23T12:00:00Z",
-          "rawPetssValue": -7.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 63,
-          "timeUtc": "2026-05-23T13:00:00Z",
-          "rawPetssValue": -7.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 64,
-          "timeUtc": "2026-05-23T14:00:00Z",
-          "rawPetssValue": -5.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 65,
           "timeUtc": "2026-05-23T15:00:00Z",
           "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
@@ -1753,31 +1717,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 66,
+          "hourIndex": 63,
           "timeUtc": "2026-05-23T16:00:00Z",
-          "rawPetssValue": 2.0,
+          "rawPetssValue": 3.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.2,
+          "sourceStageFt": 0.3,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.2,
-          "mllwStageFt": 2.33,
-          "matchedStageKey": "0.2",
+          "navd88StageFt": 0.3,
+          "mllwStageFt": 2.43,
+          "matchedStageKey": "0.3",
           "wasClamped": false
         },
         {
-          "hourIndex": 67,
+          "hourIndex": 64,
           "timeUtc": "2026-05-23T17:00:00Z",
-          "rawPetssValue": 6.0,
+          "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.6,
+          "sourceStageFt": 0.7,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.6,
-          "mllwStageFt": 2.73,
-          "matchedStageKey": "0.6",
+          "navd88StageFt": 0.7,
+          "mllwStageFt": 2.83,
+          "matchedStageKey": "0.7",
           "wasClamped": false
         },
         {
-          "hourIndex": 68,
+          "hourIndex": 65,
           "timeUtc": "2026-05-23T18:00:00Z",
           "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
@@ -1789,19 +1753,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 69,
+          "hourIndex": 66,
           "timeUtc": "2026-05-23T19:00:00Z",
-          "rawPetssValue": 10.0,
+          "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 1.0,
+          "sourceStageFt": 1.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.0,
-          "mllwStageFt": 3.13,
-          "matchedStageKey": "1.0",
+          "navd88StageFt": 1.1,
+          "mllwStageFt": 3.23,
+          "matchedStageKey": "1.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 70,
+          "hourIndex": 67,
           "timeUtc": "2026-05-23T20:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -1813,7 +1777,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 71,
+          "hourIndex": 68,
           "timeUtc": "2026-05-23T21:00:00Z",
           "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
@@ -1822,6 +1786,42 @@
           "navd88StageFt": 0.6,
           "mllwStageFt": 2.73,
           "matchedStageKey": "0.6",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 69,
+          "timeUtc": "2026-05-23T22:00:00Z",
+          "rawPetssValue": 3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.3,
+          "mllwStageFt": 2.43,
+          "matchedStageKey": "0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 70,
+          "timeUtc": "2026-05-23T23:00:00Z",
+          "rawPetssValue": 0.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 71,
+          "timeUtc": "2026-05-24T00:00:00Z",
+          "rawPetssValue": -3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
           "wasClamped": false
         }
       ]
@@ -1833,42 +1833,6 @@
       "hours": [
         {
           "hourIndex": 0,
-          "timeUtc": "2026-05-20T22:00:00Z",
-          "rawPetssValue": -10.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -1.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -1.0,
-          "mllwStageFt": 1.13,
-          "matchedStageKey": "-1.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 1,
-          "timeUtc": "2026-05-20T23:00:00Z",
-          "rawPetssValue": -7.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.7,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.7,
-          "mllwStageFt": 1.43,
-          "matchedStageKey": "-0.7",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 2,
-          "timeUtc": "2026-05-21T00:00:00Z",
-          "rawPetssValue": -3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.3,
-          "mllwStageFt": 1.83,
-          "matchedStageKey": "-0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 3,
           "timeUtc": "2026-05-21T01:00:00Z",
           "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
@@ -1880,7 +1844,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 4,
+          "hourIndex": 1,
           "timeUtc": "2026-05-21T02:00:00Z",
           "rawPetssValue": 6.0,
           "rawPetssScale": 0.1,
@@ -1892,7 +1856,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 5,
+          "hourIndex": 2,
           "timeUtc": "2026-05-21T03:00:00Z",
           "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
@@ -1904,7 +1868,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 6,
+          "hourIndex": 3,
           "timeUtc": "2026-05-21T04:00:00Z",
           "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
@@ -1916,7 +1880,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 7,
+          "hourIndex": 4,
           "timeUtc": "2026-05-21T05:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
@@ -1928,7 +1892,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 8,
+          "hourIndex": 5,
           "timeUtc": "2026-05-21T06:00:00Z",
           "rawPetssValue": 8.0,
           "rawPetssScale": 0.1,
@@ -1940,7 +1904,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 9,
+          "hourIndex": 6,
           "timeUtc": "2026-05-21T07:00:00Z",
           "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
@@ -1952,7 +1916,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 10,
+          "hourIndex": 7,
           "timeUtc": "2026-05-21T08:00:00Z",
           "rawPetssValue": -2.0,
           "rawPetssScale": 0.1,
@@ -1964,7 +1928,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 11,
+          "hourIndex": 8,
           "timeUtc": "2026-05-21T09:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -1976,19 +1940,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 12,
+          "hourIndex": 9,
           "timeUtc": "2026-05-21T10:00:00Z",
-          "rawPetssValue": -9.0,
+          "rawPetssValue": -8.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.9,
+          "sourceStageFt": -0.8,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.9,
-          "mllwStageFt": 1.23,
-          "matchedStageKey": "-0.9",
+          "navd88StageFt": -0.8,
+          "mllwStageFt": 1.33,
+          "matchedStageKey": "-0.8",
           "wasClamped": false
         },
         {
-          "hourIndex": 13,
+          "hourIndex": 10,
           "timeUtc": "2026-05-21T11:00:00Z",
           "rawPetssValue": -9.0,
           "rawPetssScale": 0.1,
@@ -2000,7 +1964,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 14,
+          "hourIndex": 11,
           "timeUtc": "2026-05-21T12:00:00Z",
           "rawPetssValue": -6.0,
           "rawPetssScale": 0.1,
@@ -2012,7 +1976,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 15,
+          "hourIndex": 12,
           "timeUtc": "2026-05-21T13:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -2024,7 +1988,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 16,
+          "hourIndex": 13,
           "timeUtc": "2026-05-21T14:00:00Z",
           "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
@@ -2036,7 +2000,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 17,
+          "hourIndex": 14,
           "timeUtc": "2026-05-21T15:00:00Z",
           "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
@@ -2048,7 +2012,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 18,
+          "hourIndex": 15,
           "timeUtc": "2026-05-21T16:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -2060,19 +2024,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 19,
+          "hourIndex": 16,
           "timeUtc": "2026-05-21T17:00:00Z",
-          "rawPetssValue": 11.0,
+          "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 1.1,
+          "sourceStageFt": 1.0,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.1,
-          "mllwStageFt": 3.23,
-          "matchedStageKey": "1.1",
+          "navd88StageFt": 1.0,
+          "mllwStageFt": 3.13,
+          "matchedStageKey": "1.0",
           "wasClamped": false
         },
         {
-          "hourIndex": 20,
+          "hourIndex": 17,
           "timeUtc": "2026-05-21T18:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -2084,7 +2048,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 21,
+          "hourIndex": 18,
           "timeUtc": "2026-05-21T19:00:00Z",
           "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
@@ -2096,7 +2060,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 22,
+          "hourIndex": 19,
           "timeUtc": "2026-05-21T20:00:00Z",
           "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
@@ -2108,7 +2072,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 23,
+          "hourIndex": 20,
           "timeUtc": "2026-05-21T21:00:00Z",
           "rawPetssValue": -2.0,
           "rawPetssScale": 0.1,
@@ -2120,7 +2084,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 24,
+          "hourIndex": 21,
           "timeUtc": "2026-05-21T22:00:00Z",
           "rawPetssValue": -4.0,
           "rawPetssScale": 0.1,
@@ -2132,19 +2096,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 25,
+          "hourIndex": 22,
           "timeUtc": "2026-05-21T23:00:00Z",
-          "rawPetssValue": -4.0,
+          "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": -0.3,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
           "wasClamped": false
         },
         {
-          "hourIndex": 26,
+          "hourIndex": 23,
           "timeUtc": "2026-05-22T00:00:00Z",
           "rawPetssValue": -1.0,
           "rawPetssScale": 0.1,
@@ -2156,7 +2120,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 27,
+          "hourIndex": 24,
           "timeUtc": "2026-05-22T01:00:00Z",
           "rawPetssValue": 2.0,
           "rawPetssScale": 0.1,
@@ -2168,176 +2132,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 28,
+          "hourIndex": 25,
           "timeUtc": "2026-05-22T02:00:00Z",
-          "rawPetssValue": 6.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.6,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.6,
-          "mllwStageFt": 2.73,
-          "matchedStageKey": "0.6",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 29,
-          "timeUtc": "2026-05-22T03:00:00Z",
-          "rawPetssValue": 10.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.0,
-          "mllwStageFt": 3.13,
-          "matchedStageKey": "1.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 30,
-          "timeUtc": "2026-05-22T04:00:00Z",
-          "rawPetssValue": 14.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.4,
-          "mllwStageFt": 3.53,
-          "matchedStageKey": "1.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 31,
-          "timeUtc": "2026-05-22T05:00:00Z",
-          "rawPetssValue": 16.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.6,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.6,
-          "mllwStageFt": 3.73,
-          "matchedStageKey": "1.6",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 32,
-          "timeUtc": "2026-05-22T06:00:00Z",
-          "rawPetssValue": 15.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.5,
-          "mllwStageFt": 3.63,
-          "matchedStageKey": "1.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 33,
-          "timeUtc": "2026-05-22T07:00:00Z",
-          "rawPetssValue": 11.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.1,
-          "mllwStageFt": 3.23,
-          "matchedStageKey": "1.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 34,
-          "timeUtc": "2026-05-22T08:00:00Z",
-          "rawPetssValue": 6.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.6,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.6,
-          "mllwStageFt": 2.73,
-          "matchedStageKey": "0.6",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 35,
-          "timeUtc": "2026-05-22T09:00:00Z",
-          "rawPetssValue": 1.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.1,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.1,
-          "mllwStageFt": 2.23,
-          "matchedStageKey": "0.1",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 36,
-          "timeUtc": "2026-05-22T10:00:00Z",
-          "rawPetssValue": -3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.3,
-          "mllwStageFt": 1.83,
-          "matchedStageKey": "-0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 37,
-          "timeUtc": "2026-05-22T11:00:00Z",
-          "rawPetssValue": -5.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 38,
-          "timeUtc": "2026-05-22T12:00:00Z",
-          "rawPetssValue": -5.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.5,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.5,
-          "mllwStageFt": 1.63,
-          "matchedStageKey": "-0.5",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 39,
-          "timeUtc": "2026-05-22T13:00:00Z",
-          "rawPetssValue": -3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": -0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.3,
-          "mllwStageFt": 1.83,
-          "matchedStageKey": "-0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 40,
-          "timeUtc": "2026-05-22T14:00:00Z",
-          "rawPetssValue": 0.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 41,
-          "timeUtc": "2026-05-22T15:00:00Z",
-          "rawPetssValue": 3.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.3,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.3,
-          "mllwStageFt": 2.43,
-          "matchedStageKey": "0.3",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 42,
-          "timeUtc": "2026-05-22T16:00:00Z",
           "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 0.7,
@@ -2348,20 +2144,8 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 43,
-          "timeUtc": "2026-05-22T17:00:00Z",
-          "rawPetssValue": 10.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.0,
-          "mllwStageFt": 3.13,
-          "matchedStageKey": "1.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 44,
-          "timeUtc": "2026-05-22T18:00:00Z",
+          "hourIndex": 26,
+          "timeUtc": "2026-05-22T03:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.1,
@@ -2372,32 +2156,128 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 45,
-          "timeUtc": "2026-05-22T19:00:00Z",
-          "rawPetssValue": 9.0,
+          "hourIndex": 27,
+          "timeUtc": "2026-05-22T04:00:00Z",
+          "rawPetssValue": 15.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.9,
+          "sourceStageFt": 1.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.9,
-          "mllwStageFt": 3.03,
-          "matchedStageKey": "0.9",
+          "navd88StageFt": 1.5,
+          "mllwStageFt": 3.63,
+          "matchedStageKey": "1.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 46,
-          "timeUtc": "2026-05-22T20:00:00Z",
-          "rawPetssValue": 6.0,
+          "hourIndex": 28,
+          "timeUtc": "2026-05-22T05:00:00Z",
+          "rawPetssValue": 17.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.6,
+          "sourceStageFt": 1.7,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.6,
-          "mllwStageFt": 2.73,
-          "matchedStageKey": "0.6",
+          "navd88StageFt": 1.7,
+          "mllwStageFt": 3.83,
+          "matchedStageKey": "1.7",
           "wasClamped": false
         },
         {
-          "hourIndex": 47,
-          "timeUtc": "2026-05-22T21:00:00Z",
+          "hourIndex": 29,
+          "timeUtc": "2026-05-22T06:00:00Z",
+          "rawPetssValue": 16.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.6,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.6,
+          "mllwStageFt": 3.73,
+          "matchedStageKey": "1.6",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 30,
+          "timeUtc": "2026-05-22T07:00:00Z",
+          "rawPetssValue": 12.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.2,
+          "mllwStageFt": 3.33,
+          "matchedStageKey": "1.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 31,
+          "timeUtc": "2026-05-22T08:00:00Z",
+          "rawPetssValue": 7.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.7,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.7,
+          "mllwStageFt": 2.83,
+          "matchedStageKey": "0.7",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 32,
+          "timeUtc": "2026-05-22T09:00:00Z",
+          "rawPetssValue": 2.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.2,
+          "mllwStageFt": 2.33,
+          "matchedStageKey": "0.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 33,
+          "timeUtc": "2026-05-22T10:00:00Z",
+          "rawPetssValue": -2.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 34,
+          "timeUtc": "2026-05-22T11:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 35,
+          "timeUtc": "2026-05-22T12:00:00Z",
+          "rawPetssValue": -4.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.4,
+          "mllwStageFt": 1.73,
+          "matchedStageKey": "-0.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 36,
+          "timeUtc": "2026-05-22T13:00:00Z",
+          "rawPetssValue": -2.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 37,
+          "timeUtc": "2026-05-22T14:00:00Z",
           "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 0.1,
@@ -2408,92 +2288,56 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 48,
-          "timeUtc": "2026-05-22T22:00:00Z",
-          "rawPetssValue": -2.0,
+          "hourIndex": 38,
+          "timeUtc": "2026-05-22T15:00:00Z",
+          "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.2,
+          "sourceStageFt": 0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.2,
-          "mllwStageFt": 1.93,
-          "matchedStageKey": "-0.2",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 49,
-          "timeUtc": "2026-05-22T23:00:00Z",
-          "rawPetssValue": -4.0,
+          "hourIndex": 39,
+          "timeUtc": "2026-05-22T16:00:00Z",
+          "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": 0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 50,
-          "timeUtc": "2026-05-23T00:00:00Z",
-          "rawPetssValue": -4.0,
+          "hourIndex": 40,
+          "timeUtc": "2026-05-22T17:00:00Z",
+          "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.4,
+          "sourceStageFt": 1.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.4,
-          "mllwStageFt": 1.73,
-          "matchedStageKey": "-0.4",
+          "navd88StageFt": 1.2,
+          "mllwStageFt": 3.33,
+          "matchedStageKey": "1.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 51,
-          "timeUtc": "2026-05-23T01:00:00Z",
-          "rawPetssValue": -2.0,
+          "hourIndex": 41,
+          "timeUtc": "2026-05-22T18:00:00Z",
+          "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": -0.2,
+          "sourceStageFt": 1.2,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": -0.2,
-          "mllwStageFt": 1.93,
-          "matchedStageKey": "-0.2",
+          "navd88StageFt": 1.2,
+          "mllwStageFt": 3.33,
+          "matchedStageKey": "1.2",
           "wasClamped": false
         },
         {
-          "hourIndex": 52,
-          "timeUtc": "2026-05-23T02:00:00Z",
-          "rawPetssValue": 0.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 53,
-          "timeUtc": "2026-05-23T03:00:00Z",
-          "rawPetssValue": 4.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 54,
-          "timeUtc": "2026-05-23T04:00:00Z",
-          "rawPetssValue": 8.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 55,
-          "timeUtc": "2026-05-23T05:00:00Z",
+          "hourIndex": 42,
+          "timeUtc": "2026-05-22T19:00:00Z",
           "rawPetssValue": 11.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.1,
@@ -2504,19 +2348,139 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 56,
-          "timeUtc": "2026-05-23T06:00:00Z",
-          "rawPetssValue": 13.0,
+          "hourIndex": 43,
+          "timeUtc": "2026-05-22T20:00:00Z",
+          "rawPetssValue": 7.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 1.3,
+          "sourceStageFt": 0.7,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.3,
-          "mllwStageFt": 3.43,
-          "matchedStageKey": "1.3",
+          "navd88StageFt": 0.7,
+          "mllwStageFt": 2.83,
+          "matchedStageKey": "0.7",
           "wasClamped": false
         },
         {
-          "hourIndex": 57,
+          "hourIndex": 44,
+          "timeUtc": "2026-05-22T21:00:00Z",
+          "rawPetssValue": 3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.3,
+          "mllwStageFt": 2.43,
+          "matchedStageKey": "0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 45,
+          "timeUtc": "2026-05-22T22:00:00Z",
+          "rawPetssValue": 0.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 46,
+          "timeUtc": "2026-05-22T23:00:00Z",
+          "rawPetssValue": -2.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.2,
+          "mllwStageFt": 1.93,
+          "matchedStageKey": "-0.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 47,
+          "timeUtc": "2026-05-23T00:00:00Z",
+          "rawPetssValue": -3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.3,
+          "mllwStageFt": 1.83,
+          "matchedStageKey": "-0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 48,
+          "timeUtc": "2026-05-23T01:00:00Z",
+          "rawPetssValue": -1.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": -0.1,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": -0.1,
+          "mllwStageFt": 2.03,
+          "matchedStageKey": "-0.1",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 49,
+          "timeUtc": "2026-05-23T02:00:00Z",
+          "rawPetssValue": 1.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.1,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 50,
+          "timeUtc": "2026-05-23T03:00:00Z",
+          "rawPetssValue": 5.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.5,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 51,
+          "timeUtc": "2026-05-23T04:00:00Z",
+          "rawPetssValue": 9.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.9,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 52,
+          "timeUtc": "2026-05-23T05:00:00Z",
+          "rawPetssValue": 12.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.2,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.2,
+          "mllwStageFt": 3.33,
+          "matchedStageKey": "1.2",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 53,
+          "timeUtc": "2026-05-23T06:00:00Z",
+          "rawPetssValue": 14.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.4,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.4,
+          "mllwStageFt": 3.53,
+          "matchedStageKey": "1.4",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 54,
           "timeUtc": "2026-05-23T07:00:00Z",
           "rawPetssValue": 12.0,
           "rawPetssScale": 0.1,
@@ -2528,19 +2492,19 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 58,
+          "hourIndex": 55,
           "timeUtc": "2026-05-23T08:00:00Z",
-          "rawPetssValue": 8.0,
+          "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.8,
+          "sourceStageFt": 0.9,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.8,
-          "mllwStageFt": 2.93,
-          "matchedStageKey": "0.8",
+          "navd88StageFt": 0.9,
+          "mllwStageFt": 3.03,
+          "matchedStageKey": "0.9",
           "wasClamped": false
         },
         {
-          "hourIndex": 59,
+          "hourIndex": 56,
           "timeUtc": "2026-05-23T09:00:00Z",
           "rawPetssValue": 4.0,
           "rawPetssScale": 0.1,
@@ -2552,7 +2516,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 60,
+          "hourIndex": 57,
           "timeUtc": "2026-05-23T10:00:00Z",
           "rawPetssValue": 0.0,
           "rawPetssScale": 0.1,
@@ -2564,7 +2528,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 61,
+          "hourIndex": 58,
           "timeUtc": "2026-05-23T11:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -2576,7 +2540,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 62,
+          "hourIndex": 59,
           "timeUtc": "2026-05-23T12:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -2588,7 +2552,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 63,
+          "hourIndex": 60,
           "timeUtc": "2026-05-23T13:00:00Z",
           "rawPetssValue": -5.0,
           "rawPetssScale": 0.1,
@@ -2600,7 +2564,7 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 64,
+          "hourIndex": 61,
           "timeUtc": "2026-05-23T14:00:00Z",
           "rawPetssValue": -3.0,
           "rawPetssScale": 0.1,
@@ -2612,56 +2576,44 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 65,
+          "hourIndex": 62,
           "timeUtc": "2026-05-23T15:00:00Z",
-          "rawPetssValue": 0.0,
+          "rawPetssValue": 1.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.0,
+          "sourceStageFt": 0.1,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.0,
-          "mllwStageFt": 2.13,
-          "matchedStageKey": "0.0",
+          "navd88StageFt": 0.1,
+          "mllwStageFt": 2.23,
+          "matchedStageKey": "0.1",
           "wasClamped": false
         },
         {
-          "hourIndex": 66,
+          "hourIndex": 63,
           "timeUtc": "2026-05-23T16:00:00Z",
-          "rawPetssValue": 4.0,
+          "rawPetssValue": 5.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.4,
+          "sourceStageFt": 0.5,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.4,
-          "mllwStageFt": 2.53,
-          "matchedStageKey": "0.4",
+          "navd88StageFt": 0.5,
+          "mllwStageFt": 2.63,
+          "matchedStageKey": "0.5",
           "wasClamped": false
         },
         {
-          "hourIndex": 67,
+          "hourIndex": 64,
           "timeUtc": "2026-05-23T17:00:00Z",
-          "rawPetssValue": 9.0,
+          "rawPetssValue": 10.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 0.9,
+          "sourceStageFt": 1.0,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 0.9,
-          "mllwStageFt": 3.03,
-          "matchedStageKey": "0.9",
+          "navd88StageFt": 1.0,
+          "mllwStageFt": 3.13,
+          "matchedStageKey": "1.0",
           "wasClamped": false
         },
         {
-          "hourIndex": 68,
+          "hourIndex": 65,
           "timeUtc": "2026-05-23T18:00:00Z",
-          "rawPetssValue": 12.0,
-          "rawPetssScale": 0.1,
-          "sourceStageFt": 1.2,
-          "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.2,
-          "mllwStageFt": 3.33,
-          "matchedStageKey": "1.2",
-          "wasClamped": false
-        },
-        {
-          "hourIndex": 69,
-          "timeUtc": "2026-05-23T19:00:00Z",
           "rawPetssValue": 13.0,
           "rawPetssScale": 0.1,
           "sourceStageFt": 1.3,
@@ -2672,19 +2624,31 @@
           "wasClamped": false
         },
         {
-          "hourIndex": 70,
-          "timeUtc": "2026-05-23T20:00:00Z",
-          "rawPetssValue": 12.0,
+          "hourIndex": 66,
+          "timeUtc": "2026-05-23T19:00:00Z",
+          "rawPetssValue": 14.0,
           "rawPetssScale": 0.1,
-          "sourceStageFt": 1.2,
+          "sourceStageFt": 1.4,
           "sourceDatum": "NAVD88",
-          "navd88StageFt": 1.2,
-          "mllwStageFt": 3.33,
-          "matchedStageKey": "1.2",
+          "navd88StageFt": 1.4,
+          "mllwStageFt": 3.53,
+          "matchedStageKey": "1.4",
           "wasClamped": false
         },
         {
-          "hourIndex": 71,
+          "hourIndex": 67,
+          "timeUtc": "2026-05-23T20:00:00Z",
+          "rawPetssValue": 13.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 1.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 1.3,
+          "mllwStageFt": 3.43,
+          "matchedStageKey": "1.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 68,
           "timeUtc": "2026-05-23T21:00:00Z",
           "rawPetssValue": 9.0,
           "rawPetssScale": 0.1,
@@ -2694,6 +2658,42 @@
           "mllwStageFt": 3.03,
           "matchedStageKey": "0.9",
           "wasClamped": false
+        },
+        {
+          "hourIndex": 69,
+          "timeUtc": "2026-05-23T22:00:00Z",
+          "rawPetssValue": 6.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.6,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.6,
+          "mllwStageFt": 2.73,
+          "matchedStageKey": "0.6",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 70,
+          "timeUtc": "2026-05-23T23:00:00Z",
+          "rawPetssValue": 3.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.3,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.3,
+          "mllwStageFt": 2.43,
+          "matchedStageKey": "0.3",
+          "wasClamped": false
+        },
+        {
+          "hourIndex": 71,
+          "timeUtc": "2026-05-24T00:00:00Z",
+          "rawPetssValue": 0.0,
+          "rawPetssScale": 0.1,
+          "sourceStageFt": 0.0,
+          "sourceDatum": "NAVD88",
+          "navd88StageFt": 0.0,
+          "mllwStageFt": 2.13,
+          "matchedStageKey": "0.0",
+          "wasClamped": false
         }
       ]
     }
@@ -2702,66 +2702,30 @@
   "hours": [
     {
       "hourIndex": 0,
-      "timeUtc": "2026-05-20T22:00:00Z",
-      "rawPetssValue": -10.0,
+      "timeUtc": "2026-05-21T01:00:00Z",
+      "rawPetssValue": 1.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -1.0,
+      "sourceStageFt": 0.1,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -1.0,
-      "mllwStageFt": 1.13,
-      "matchedStageKey": "-1.0",
+      "navd88StageFt": 0.1,
+      "mllwStageFt": 2.23,
+      "matchedStageKey": "0.1",
       "wasClamped": false
     },
     {
       "hourIndex": 1,
-      "timeUtc": "2026-05-20T23:00:00Z",
-      "rawPetssValue": -8.0,
+      "timeUtc": "2026-05-21T02:00:00Z",
+      "rawPetssValue": 6.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.8,
+      "sourceStageFt": 0.6,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.8,
-      "mllwStageFt": 1.33,
-      "matchedStageKey": "-0.8",
+      "navd88StageFt": 0.6,
+      "mllwStageFt": 2.73,
+      "matchedStageKey": "0.6",
       "wasClamped": false
     },
     {
       "hourIndex": 2,
-      "timeUtc": "2026-05-21T00:00:00Z",
-      "rawPetssValue": -4.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": -0.4,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.4,
-      "mllwStageFt": 1.73,
-      "matchedStageKey": "-0.4",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 3,
-      "timeUtc": "2026-05-21T01:00:00Z",
-      "rawPetssValue": 0.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.0,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.0,
-      "mllwStageFt": 2.13,
-      "matchedStageKey": "0.0",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 4,
-      "timeUtc": "2026-05-21T02:00:00Z",
-      "rawPetssValue": 5.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.5,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.5,
-      "mllwStageFt": 2.63,
-      "matchedStageKey": "0.5",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 5,
       "timeUtc": "2026-05-21T03:00:00Z",
       "rawPetssValue": 9.0,
       "rawPetssScale": 0.1,
@@ -2773,7 +2737,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 6,
+      "hourIndex": 3,
       "timeUtc": "2026-05-21T04:00:00Z",
       "rawPetssValue": 11.0,
       "rawPetssScale": 0.1,
@@ -2785,7 +2749,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 7,
+      "hourIndex": 4,
       "timeUtc": "2026-05-21T05:00:00Z",
       "rawPetssValue": 11.0,
       "rawPetssScale": 0.1,
@@ -2797,7 +2761,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 8,
+      "hourIndex": 5,
       "timeUtc": "2026-05-21T06:00:00Z",
       "rawPetssValue": 7.0,
       "rawPetssScale": 0.1,
@@ -2809,7 +2773,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 9,
+      "hourIndex": 6,
       "timeUtc": "2026-05-21T07:00:00Z",
       "rawPetssValue": 2.0,
       "rawPetssScale": 0.1,
@@ -2821,31 +2785,31 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 10,
+      "hourIndex": 7,
       "timeUtc": "2026-05-21T08:00:00Z",
-      "rawPetssValue": -3.0,
+      "rawPetssValue": -2.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.3,
+      "sourceStageFt": -0.2,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.3,
-      "mllwStageFt": 1.83,
-      "matchedStageKey": "-0.3",
+      "navd88StageFt": -0.2,
+      "mllwStageFt": 1.93,
+      "matchedStageKey": "-0.2",
       "wasClamped": false
     },
     {
-      "hourIndex": 11,
+      "hourIndex": 8,
       "timeUtc": "2026-05-21T09:00:00Z",
-      "rawPetssValue": -7.0,
+      "rawPetssValue": -6.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.7,
+      "sourceStageFt": -0.6,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.7,
-      "mllwStageFt": 1.43,
-      "matchedStageKey": "-0.7",
+      "navd88StageFt": -0.6,
+      "mllwStageFt": 1.53,
+      "matchedStageKey": "-0.6",
       "wasClamped": false
     },
     {
-      "hourIndex": 12,
+      "hourIndex": 9,
       "timeUtc": "2026-05-21T10:00:00Z",
       "rawPetssValue": -9.0,
       "rawPetssScale": 0.1,
@@ -2857,7 +2821,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 13,
+      "hourIndex": 10,
       "timeUtc": "2026-05-21T11:00:00Z",
       "rawPetssValue": -9.0,
       "rawPetssScale": 0.1,
@@ -2869,7 +2833,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 14,
+      "hourIndex": 11,
       "timeUtc": "2026-05-21T12:00:00Z",
       "rawPetssValue": -7.0,
       "rawPetssScale": 0.1,
@@ -2881,7 +2845,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 15,
+      "hourIndex": 12,
       "timeUtc": "2026-05-21T13:00:00Z",
       "rawPetssValue": -3.0,
       "rawPetssScale": 0.1,
@@ -2893,7 +2857,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 16,
+      "hourIndex": 13,
       "timeUtc": "2026-05-21T14:00:00Z",
       "rawPetssValue": 0.0,
       "rawPetssScale": 0.1,
@@ -2905,7 +2869,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 17,
+      "hourIndex": 14,
       "timeUtc": "2026-05-21T15:00:00Z",
       "rawPetssValue": 4.0,
       "rawPetssScale": 0.1,
@@ -2917,7 +2881,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 18,
+      "hourIndex": 15,
       "timeUtc": "2026-05-21T16:00:00Z",
       "rawPetssValue": 8.0,
       "rawPetssScale": 0.1,
@@ -2929,7 +2893,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 19,
+      "hourIndex": 16,
       "timeUtc": "2026-05-21T17:00:00Z",
       "rawPetssValue": 9.0,
       "rawPetssScale": 0.1,
@@ -2941,7 +2905,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 20,
+      "hourIndex": 17,
       "timeUtc": "2026-05-21T18:00:00Z",
       "rawPetssValue": 7.0,
       "rawPetssScale": 0.1,
@@ -2953,7 +2917,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 21,
+      "hourIndex": 18,
       "timeUtc": "2026-05-21T19:00:00Z",
       "rawPetssValue": 4.0,
       "rawPetssScale": 0.1,
@@ -2965,7 +2929,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 22,
+      "hourIndex": 19,
       "timeUtc": "2026-05-21T20:00:00Z",
       "rawPetssValue": 0.0,
       "rawPetssScale": 0.1,
@@ -2977,7 +2941,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 23,
+      "hourIndex": 20,
       "timeUtc": "2026-05-21T21:00:00Z",
       "rawPetssValue": -3.0,
       "rawPetssScale": 0.1,
@@ -2989,7 +2953,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 24,
+      "hourIndex": 21,
       "timeUtc": "2026-05-21T22:00:00Z",
       "rawPetssValue": -5.0,
       "rawPetssScale": 0.1,
@@ -3001,7 +2965,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 25,
+      "hourIndex": 22,
       "timeUtc": "2026-05-21T23:00:00Z",
       "rawPetssValue": -5.0,
       "rawPetssScale": 0.1,
@@ -3013,7 +2977,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 26,
+      "hourIndex": 23,
       "timeUtc": "2026-05-22T00:00:00Z",
       "rawPetssValue": -3.0,
       "rawPetssScale": 0.1,
@@ -3025,31 +2989,31 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 27,
+      "hourIndex": 24,
       "timeUtc": "2026-05-22T01:00:00Z",
-      "rawPetssValue": 0.0,
+      "rawPetssValue": 1.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.0,
+      "sourceStageFt": 0.1,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.0,
-      "mllwStageFt": 2.13,
-      "matchedStageKey": "0.0",
+      "navd88StageFt": 0.1,
+      "mllwStageFt": 2.23,
+      "matchedStageKey": "0.1",
       "wasClamped": false
     },
     {
-      "hourIndex": 28,
+      "hourIndex": 25,
       "timeUtc": "2026-05-22T02:00:00Z",
-      "rawPetssValue": 4.0,
+      "rawPetssValue": 5.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.4,
+      "sourceStageFt": 0.5,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.4,
-      "mllwStageFt": 2.53,
-      "matchedStageKey": "0.4",
+      "navd88StageFt": 0.5,
+      "mllwStageFt": 2.63,
+      "matchedStageKey": "0.5",
       "wasClamped": false
     },
     {
-      "hourIndex": 29,
+      "hourIndex": 26,
       "timeUtc": "2026-05-22T03:00:00Z",
       "rawPetssValue": 9.0,
       "rawPetssScale": 0.1,
@@ -3061,32 +3025,8 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 30,
+      "hourIndex": 27,
       "timeUtc": "2026-05-22T04:00:00Z",
-      "rawPetssValue": 12.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 1.2,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 1.2,
-      "mllwStageFt": 3.33,
-      "matchedStageKey": "1.2",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 31,
-      "timeUtc": "2026-05-22T05:00:00Z",
-      "rawPetssValue": 14.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 1.4,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 1.4,
-      "mllwStageFt": 3.53,
-      "matchedStageKey": "1.4",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 32,
-      "timeUtc": "2026-05-22T06:00:00Z",
       "rawPetssValue": 13.0,
       "rawPetssScale": 0.1,
       "sourceStageFt": 1.3,
@@ -3097,7 +3037,31 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 33,
+      "hourIndex": 28,
+      "timeUtc": "2026-05-22T05:00:00Z",
+      "rawPetssValue": 15.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 1.5,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 1.5,
+      "mllwStageFt": 3.63,
+      "matchedStageKey": "1.5",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 29,
+      "timeUtc": "2026-05-22T06:00:00Z",
+      "rawPetssValue": 14.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 1.4,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 1.4,
+      "mllwStageFt": 3.53,
+      "matchedStageKey": "1.4",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 30,
       "timeUtc": "2026-05-22T07:00:00Z",
       "rawPetssValue": 10.0,
       "rawPetssScale": 0.1,
@@ -3109,19 +3073,19 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 34,
+      "hourIndex": 31,
       "timeUtc": "2026-05-22T08:00:00Z",
-      "rawPetssValue": 4.0,
+      "rawPetssValue": 5.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.4,
+      "sourceStageFt": 0.5,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.4,
-      "mllwStageFt": 2.53,
-      "matchedStageKey": "0.4",
+      "navd88StageFt": 0.5,
+      "mllwStageFt": 2.63,
+      "matchedStageKey": "0.5",
       "wasClamped": false
     },
     {
-      "hourIndex": 35,
+      "hourIndex": 32,
       "timeUtc": "2026-05-22T09:00:00Z",
       "rawPetssValue": 0.0,
       "rawPetssScale": 0.1,
@@ -3133,19 +3097,19 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 36,
+      "hourIndex": 33,
       "timeUtc": "2026-05-22T10:00:00Z",
-      "rawPetssValue": -4.0,
+      "rawPetssValue": -3.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.4,
+      "sourceStageFt": -0.3,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.4,
-      "mllwStageFt": 1.73,
-      "matchedStageKey": "-0.4",
+      "navd88StageFt": -0.3,
+      "mllwStageFt": 1.83,
+      "matchedStageKey": "-0.3",
       "wasClamped": false
     },
     {
-      "hourIndex": 37,
+      "hourIndex": 34,
       "timeUtc": "2026-05-22T11:00:00Z",
       "rawPetssValue": -6.0,
       "rawPetssScale": 0.1,
@@ -3157,7 +3121,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 38,
+      "hourIndex": 35,
       "timeUtc": "2026-05-22T12:00:00Z",
       "rawPetssValue": -6.0,
       "rawPetssScale": 0.1,
@@ -3169,7 +3133,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 39,
+      "hourIndex": 36,
       "timeUtc": "2026-05-22T13:00:00Z",
       "rawPetssValue": -4.0,
       "rawPetssScale": 0.1,
@@ -3181,92 +3145,8 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 40,
+      "hourIndex": 37,
       "timeUtc": "2026-05-22T14:00:00Z",
-      "rawPetssValue": -1.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": -0.1,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.1,
-      "mllwStageFt": 2.03,
-      "matchedStageKey": "-0.1",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 41,
-      "timeUtc": "2026-05-22T15:00:00Z",
-      "rawPetssValue": 2.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.2,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.2,
-      "mllwStageFt": 2.33,
-      "matchedStageKey": "0.2",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 42,
-      "timeUtc": "2026-05-22T16:00:00Z",
-      "rawPetssValue": 6.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.6,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.6,
-      "mllwStageFt": 2.73,
-      "matchedStageKey": "0.6",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 43,
-      "timeUtc": "2026-05-22T17:00:00Z",
-      "rawPetssValue": 9.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.9,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.9,
-      "mllwStageFt": 3.03,
-      "matchedStageKey": "0.9",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 44,
-      "timeUtc": "2026-05-22T18:00:00Z",
-      "rawPetssValue": 10.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 1.0,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 1.0,
-      "mllwStageFt": 3.13,
-      "matchedStageKey": "1.0",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 45,
-      "timeUtc": "2026-05-22T19:00:00Z",
-      "rawPetssValue": 8.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.8,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.8,
-      "mllwStageFt": 2.93,
-      "matchedStageKey": "0.8",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 46,
-      "timeUtc": "2026-05-22T20:00:00Z",
-      "rawPetssValue": 4.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.4,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.4,
-      "mllwStageFt": 2.53,
-      "matchedStageKey": "0.4",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 47,
-      "timeUtc": "2026-05-22T21:00:00Z",
       "rawPetssValue": 0.0,
       "rawPetssScale": 0.1,
       "sourceStageFt": 0.0,
@@ -3277,8 +3157,128 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 48,
+      "hourIndex": 38,
+      "timeUtc": "2026-05-22T15:00:00Z",
+      "rawPetssValue": 3.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.3,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.3,
+      "mllwStageFt": 2.43,
+      "matchedStageKey": "0.3",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 39,
+      "timeUtc": "2026-05-22T16:00:00Z",
+      "rawPetssValue": 7.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.7,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.7,
+      "mllwStageFt": 2.83,
+      "matchedStageKey": "0.7",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 40,
+      "timeUtc": "2026-05-22T17:00:00Z",
+      "rawPetssValue": 10.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 1.0,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 1.0,
+      "mllwStageFt": 3.13,
+      "matchedStageKey": "1.0",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 41,
+      "timeUtc": "2026-05-22T18:00:00Z",
+      "rawPetssValue": 11.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 1.1,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 1.1,
+      "mllwStageFt": 3.23,
+      "matchedStageKey": "1.1",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 42,
+      "timeUtc": "2026-05-22T19:00:00Z",
+      "rawPetssValue": 9.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.9,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.9,
+      "mllwStageFt": 3.03,
+      "matchedStageKey": "0.9",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 43,
+      "timeUtc": "2026-05-22T20:00:00Z",
+      "rawPetssValue": 5.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.5,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.5,
+      "mllwStageFt": 2.63,
+      "matchedStageKey": "0.5",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 44,
+      "timeUtc": "2026-05-22T21:00:00Z",
+      "rawPetssValue": 1.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.1,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.1,
+      "mllwStageFt": 2.23,
+      "matchedStageKey": "0.1",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 45,
       "timeUtc": "2026-05-22T22:00:00Z",
+      "rawPetssValue": -2.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.2,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.2,
+      "mllwStageFt": 1.93,
+      "matchedStageKey": "-0.2",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 46,
+      "timeUtc": "2026-05-22T23:00:00Z",
+      "rawPetssValue": -4.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.4,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.4,
+      "mllwStageFt": 1.73,
+      "matchedStageKey": "-0.4",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 47,
+      "timeUtc": "2026-05-23T00:00:00Z",
+      "rawPetssValue": -4.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.4,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.4,
+      "mllwStageFt": 1.73,
+      "matchedStageKey": "-0.4",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 48,
+      "timeUtc": "2026-05-23T01:00:00Z",
       "rawPetssValue": -3.0,
       "rawPetssScale": 0.1,
       "sourceStageFt": -0.3,
@@ -3290,90 +3290,54 @@
     },
     {
       "hourIndex": 49,
-      "timeUtc": "2026-05-22T23:00:00Z",
-      "rawPetssValue": -5.0,
+      "timeUtc": "2026-05-23T02:00:00Z",
+      "rawPetssValue": 0.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.5,
+      "sourceStageFt": 0.0,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.5,
-      "mllwStageFt": 1.63,
-      "matchedStageKey": "-0.5",
+      "navd88StageFt": 0.0,
+      "mllwStageFt": 2.13,
+      "matchedStageKey": "0.0",
       "wasClamped": false
     },
     {
       "hourIndex": 50,
-      "timeUtc": "2026-05-23T00:00:00Z",
-      "rawPetssValue": -5.0,
+      "timeUtc": "2026-05-23T03:00:00Z",
+      "rawPetssValue": 4.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.5,
+      "sourceStageFt": 0.4,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.5,
-      "mllwStageFt": 1.63,
-      "matchedStageKey": "-0.5",
+      "navd88StageFt": 0.4,
+      "mllwStageFt": 2.53,
+      "matchedStageKey": "0.4",
       "wasClamped": false
     },
     {
       "hourIndex": 51,
-      "timeUtc": "2026-05-23T01:00:00Z",
-      "rawPetssValue": -4.0,
+      "timeUtc": "2026-05-23T04:00:00Z",
+      "rawPetssValue": 8.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.4,
+      "sourceStageFt": 0.8,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.4,
-      "mllwStageFt": 1.73,
-      "matchedStageKey": "-0.4",
+      "navd88StageFt": 0.8,
+      "mllwStageFt": 2.93,
+      "matchedStageKey": "0.8",
       "wasClamped": false
     },
     {
       "hourIndex": 52,
-      "timeUtc": "2026-05-23T02:00:00Z",
-      "rawPetssValue": -1.0,
+      "timeUtc": "2026-05-23T05:00:00Z",
+      "rawPetssValue": 11.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.1,
+      "sourceStageFt": 1.1,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.1,
-      "mllwStageFt": 2.03,
-      "matchedStageKey": "-0.1",
+      "navd88StageFt": 1.1,
+      "mllwStageFt": 3.23,
+      "matchedStageKey": "1.1",
       "wasClamped": false
     },
     {
       "hourIndex": 53,
-      "timeUtc": "2026-05-23T03:00:00Z",
-      "rawPetssValue": 3.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.3,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.3,
-      "mllwStageFt": 2.43,
-      "matchedStageKey": "0.3",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 54,
-      "timeUtc": "2026-05-23T04:00:00Z",
-      "rawPetssValue": 7.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 0.7,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.7,
-      "mllwStageFt": 2.83,
-      "matchedStageKey": "0.7",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 55,
-      "timeUtc": "2026-05-23T05:00:00Z",
-      "rawPetssValue": 10.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": 1.0,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": 1.0,
-      "mllwStageFt": 3.13,
-      "matchedStageKey": "1.0",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 56,
       "timeUtc": "2026-05-23T06:00:00Z",
       "rawPetssValue": 12.0,
       "rawPetssScale": 0.1,
@@ -3385,7 +3349,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 57,
+      "hourIndex": 54,
       "timeUtc": "2026-05-23T07:00:00Z",
       "rawPetssValue": 11.0,
       "rawPetssScale": 0.1,
@@ -3397,19 +3361,19 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 58,
+      "hourIndex": 55,
       "timeUtc": "2026-05-23T08:00:00Z",
-      "rawPetssValue": 7.0,
+      "rawPetssValue": 8.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.7,
+      "sourceStageFt": 0.8,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.7,
-      "mllwStageFt": 2.83,
-      "matchedStageKey": "0.7",
+      "navd88StageFt": 0.8,
+      "mllwStageFt": 2.93,
+      "matchedStageKey": "0.8",
       "wasClamped": false
     },
     {
-      "hourIndex": 59,
+      "hourIndex": 56,
       "timeUtc": "2026-05-23T09:00:00Z",
       "rawPetssValue": 3.0,
       "rawPetssScale": 0.1,
@@ -3421,7 +3385,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 60,
+      "hourIndex": 57,
       "timeUtc": "2026-05-23T10:00:00Z",
       "rawPetssValue": -1.0,
       "rawPetssScale": 0.1,
@@ -3433,55 +3397,55 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 61,
+      "hourIndex": 58,
       "timeUtc": "2026-05-23T11:00:00Z",
-      "rawPetssValue": -5.0,
+      "rawPetssValue": -4.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": -0.5,
+      "sourceStageFt": -0.4,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.5,
-      "mllwStageFt": 1.63,
-      "matchedStageKey": "-0.5",
+      "navd88StageFt": -0.4,
+      "mllwStageFt": 1.73,
+      "matchedStageKey": "-0.4",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 59,
+      "timeUtc": "2026-05-23T12:00:00Z",
+      "rawPetssValue": -6.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.6,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.6,
+      "mllwStageFt": 1.53,
+      "matchedStageKey": "-0.6",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 60,
+      "timeUtc": "2026-05-23T13:00:00Z",
+      "rawPetssValue": -6.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.6,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.6,
+      "mllwStageFt": 1.53,
+      "matchedStageKey": "-0.6",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 61,
+      "timeUtc": "2026-05-23T14:00:00Z",
+      "rawPetssValue": -4.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.4,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.4,
+      "mllwStageFt": 1.73,
+      "matchedStageKey": "-0.4",
       "wasClamped": false
     },
     {
       "hourIndex": 62,
-      "timeUtc": "2026-05-23T12:00:00Z",
-      "rawPetssValue": -7.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": -0.7,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.7,
-      "mllwStageFt": 1.43,
-      "matchedStageKey": "-0.7",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 63,
-      "timeUtc": "2026-05-23T13:00:00Z",
-      "rawPetssValue": -7.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": -0.7,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.7,
-      "mllwStageFt": 1.43,
-      "matchedStageKey": "-0.7",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 64,
-      "timeUtc": "2026-05-23T14:00:00Z",
-      "rawPetssValue": -5.0,
-      "rawPetssScale": 0.1,
-      "sourceStageFt": -0.5,
-      "sourceDatum": "NAVD88",
-      "navd88StageFt": -0.5,
-      "mllwStageFt": 1.63,
-      "matchedStageKey": "-0.5",
-      "wasClamped": false
-    },
-    {
-      "hourIndex": 65,
       "timeUtc": "2026-05-23T15:00:00Z",
       "rawPetssValue": -1.0,
       "rawPetssScale": 0.1,
@@ -3493,31 +3457,31 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 66,
+      "hourIndex": 63,
       "timeUtc": "2026-05-23T16:00:00Z",
-      "rawPetssValue": 2.0,
+      "rawPetssValue": 3.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.2,
+      "sourceStageFt": 0.3,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.2,
-      "mllwStageFt": 2.33,
-      "matchedStageKey": "0.2",
+      "navd88StageFt": 0.3,
+      "mllwStageFt": 2.43,
+      "matchedStageKey": "0.3",
       "wasClamped": false
     },
     {
-      "hourIndex": 67,
+      "hourIndex": 64,
       "timeUtc": "2026-05-23T17:00:00Z",
-      "rawPetssValue": 6.0,
+      "rawPetssValue": 7.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 0.6,
+      "sourceStageFt": 0.7,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 0.6,
-      "mllwStageFt": 2.73,
-      "matchedStageKey": "0.6",
+      "navd88StageFt": 0.7,
+      "mllwStageFt": 2.83,
+      "matchedStageKey": "0.7",
       "wasClamped": false
     },
     {
-      "hourIndex": 68,
+      "hourIndex": 65,
       "timeUtc": "2026-05-23T18:00:00Z",
       "rawPetssValue": 10.0,
       "rawPetssScale": 0.1,
@@ -3529,19 +3493,19 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 69,
+      "hourIndex": 66,
       "timeUtc": "2026-05-23T19:00:00Z",
-      "rawPetssValue": 10.0,
+      "rawPetssValue": 11.0,
       "rawPetssScale": 0.1,
-      "sourceStageFt": 1.0,
+      "sourceStageFt": 1.1,
       "sourceDatum": "NAVD88",
-      "navd88StageFt": 1.0,
-      "mllwStageFt": 3.13,
-      "matchedStageKey": "1.0",
+      "navd88StageFt": 1.1,
+      "mllwStageFt": 3.23,
+      "matchedStageKey": "1.1",
       "wasClamped": false
     },
     {
-      "hourIndex": 70,
+      "hourIndex": 67,
       "timeUtc": "2026-05-23T20:00:00Z",
       "rawPetssValue": 9.0,
       "rawPetssScale": 0.1,
@@ -3553,7 +3517,7 @@
       "wasClamped": false
     },
     {
-      "hourIndex": 71,
+      "hourIndex": 68,
       "timeUtc": "2026-05-23T21:00:00Z",
       "rawPetssValue": 6.0,
       "rawPetssScale": 0.1,
@@ -3562,6 +3526,42 @@
       "navd88StageFt": 0.6,
       "mllwStageFt": 2.73,
       "matchedStageKey": "0.6",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 69,
+      "timeUtc": "2026-05-23T22:00:00Z",
+      "rawPetssValue": 3.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.3,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.3,
+      "mllwStageFt": 2.43,
+      "matchedStageKey": "0.3",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 70,
+      "timeUtc": "2026-05-23T23:00:00Z",
+      "rawPetssValue": 0.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": 0.0,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": 0.0,
+      "mllwStageFt": 2.13,
+      "matchedStageKey": "0.0",
+      "wasClamped": false
+    },
+    {
+      "hourIndex": 71,
+      "timeUtc": "2026-05-24T00:00:00Z",
+      "rawPetssValue": -3.0,
+      "rawPetssScale": 0.1,
+      "sourceStageFt": -0.3,
+      "sourceDatum": "NAVD88",
+      "navd88StageFt": -0.3,
+      "mllwStageFt": 1.83,
+      "matchedStageKey": "-0.3",
       "wasClamped": false
     }
   ]
